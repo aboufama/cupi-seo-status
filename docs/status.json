@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-21T19:50:15Z",
-  "generated_at_et": "Aug 21, 2026 · 3:50 PM EDT",
+  "generated_at_utc": "2026-08-21T19:58:13Z",
+  "generated_at_et": "Aug 21, 2026 · 3:58 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 13m ago was: Add /about-cupi ranking page for CUPI Cornell and Cornell CUPI (#2). No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 11m ago was: A logged-out fetch of the wiki is real prose, not an empty shell (#1). No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 21m ago was: Add /about-cupi ranking page for CUPI Cornell and Cornell CUPI (#2). No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 19m ago was: A logged-out fetch of the wiki is real prose, not an empty shell (#1). No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -163,6 +163,174 @@
         "notes": "Official site missed. CEI lab 2, CAM 3."
       }
     ],
+    "engine_note": "queries[] snapshot 12:50 PM EDT; engine not recorded in that pass",
+    "bing_snapshot": {
+      "generated_at_utc": "2026-08-21T19:53:24Z",
+      "engine": "bing",
+      "summary": "Independent Bing pass ~3:30 PM EDT: neither domain appeared in any observed Bing SERP (18/20 queries observed; 2 blocked by anti-bot filler). Cornell Parole Initiative tops acronym queries on Bing; Campus Groups #5. Action: IndexNow submission queued.",
+      "queries": [
+        {
+          "q": "Cornell CUPI",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell University",
+          "notes": "CampusGroups & club domains absent from top 10; generic Cornell.edu results"
+        },
+        {
+          "q": "CUPI Cornell",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell Parole Initiative",
+          "notes": "CampusGroups CuPI #5; Cornell Parole Initiative #1; club site & wiki absent"
+        },
+        {
+          "q": "Cornell Physical Intelligence",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell University",
+          "notes": "CampusGroups & club domains absent from top 10; generic Cornell.edu results"
+        },
+        {
+          "q": "Cornell Physical Intelligence Club",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell University",
+          "notes": "CampusGroups & club domains absent from top 10; generic Cornell.edu results"
+        },
+        {
+          "q": "Cornell Physical Intelligence Ithaca",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell University",
+          "notes": "CampusGroups & club domains absent from top 10; generic Cornell.edu results"
+        },
+        {
+          "q": "Cornell CUPI club",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell University",
+          "notes": "CampusGroups & club domains absent from top 10; generic Cornell.edu results"
+        },
+        {
+          "q": "CUPI Cornell club",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell Parole Initiative",
+          "notes": "CampusGroups CuPI #5; Cornell Parole Initiative #1; club site & wiki absent"
+        },
+        {
+          "q": "cornellphysicalintelligence",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": null,
+          "notes": "unobserved: bing served 4 unrelated randomized sets (TradeStation/Tanya Tucker/Chanel)"
+        },
+        {
+          "q": "physical intelligence Cornell",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Merriam-Webster",
+          "notes": "'physical' dictionary/TV results only; club site & wiki absent"
+        },
+        {
+          "q": "CUPI robotics Cornell",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell Parole Initiative",
+          "notes": "CampusGroups CuPI #5; Cornell Parole Initiative #1; club site & wiki absent"
+        },
+        {
+          "q": "Cornell CUPI robotics",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell University",
+          "notes": "CampusGroups & club domains absent from top 10; generic Cornell.edu results"
+        },
+        {
+          "q": "Cornell robotics club CUPI",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell University",
+          "notes": "CampusGroups & club domains absent from top 10; generic Cornell.edu results"
+        },
+        {
+          "q": "CUPI",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell Parole Initiative",
+          "notes": "CampusGroups CuPI #5; Cornell Parole Initiative #1; club site & wiki absent"
+        },
+        {
+          "q": "CUPI wiki",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell Parole Initiative",
+          "notes": "CampusGroups CuPI #5; Cornell Parole Initiative #1; club site & wiki absent"
+        },
+        {
+          "q": "Cornell Physical Intelligence wiki",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell University",
+          "notes": "CampusGroups & club domains absent from top 10; generic Cornell.edu results"
+        },
+        {
+          "q": "wiki.cornellphysicalintelligence.com",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Wikipedia",
+          "notes": "generic Wikipedia/Wikimedia results; neither target domain surfaced"
+        },
+        {
+          "q": "cuphysint",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": null,
+          "notes": "unobserved: bing served 4 unrelated randomized sets (FNAF/Poki/WhatsApp)"
+        },
+        {
+          "q": "CUPI Cornell hexapod",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell Parole Initiative",
+          "notes": "CampusGroups CuPI #5; Cornell Parole Initiative #1; club site & wiki absent"
+        },
+        {
+          "q": "CUPI Cornell drone",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell Parole Initiative",
+          "notes": "CampusGroups CuPI #5; Cornell Parole Initiative #1; club site & wiki absent"
+        },
+        {
+          "q": "Cornell embodied AI club",
+          "engine": "bing",
+          "official_rank": null,
+          "wiki_rank": null,
+          "top": "Cornell University",
+          "notes": "CampusGroups & club domains absent from top 10; generic Cornell.edu results"
+        }
+      ]
+    },
     "official_average": 2.5
   },
   "history": {
@@ -312,6 +480,11 @@
       "by": "Athos",
       "at": "2026-08-21T12:41:00-04:00",
       "note": "Wiki SEO PR open: https://github.com/Cornell-Physical-Intelligence/wiki/pull/1 (public crawlable landing). Website PR still in progress. Board now auto-refreshes via GitHub Actions every 30 minutes."
+    },
+    {
+      "by": "Fable",
+      "at": "2026-08-21T15:56:37-0400",
+      "note": "Wave 1 done via Ox Alpha workers: website PR#2 merged (7333f54, /about-cupi/ live, 8-URL sitemap) and wiki PR#1 conflict-resolved + merged (6839c56, crawlable landing live, entity JSON-LD intact, repo homepage fixed). Independent Bing pass: neither domain indexed on Bing (see ranks.json bing_snapshot; baseline queries[] untouched). Wave 2 dispatched: website og:image/favicon.ico/server-rendered footer + IndexNow; wiki noindex-login/vercel-redirect + IndexNow; GitHub org cross-link pass."
     }
   ],
   "refresh": "github-actions-every-30m"
