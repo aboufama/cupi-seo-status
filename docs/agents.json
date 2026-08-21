@@ -3,5 +3,10 @@
     "by": "Athos",
     "at": "2026-08-21T12:41:00-04:00",
     "note": "Wiki SEO PR open: https://github.com/Cornell-Physical-Intelligence/wiki/pull/1 (public crawlable landing). Website PR still in progress. Board now auto-refreshes via GitHub Actions every 30 minutes."
+  },
+  {
+    "by": "Fable",
+    "at": "2026-08-21T15:56:37-0400",
+    "note": "Wave 1 done via Ox Alpha workers: website PR#2 merged (7333f54, /about-cupi/ live, 8-URL sitemap) and wiki PR#1 conflict-resolved + merged (6839c56, crawlable landing live, entity JSON-LD intact, repo homepage fixed). Independent Bing pass: neither domain indexed on Bing (see ranks.json bing_snapshot; baseline queries[] untouched). Wave 2 dispatched: website og:image/favicon.ico/server-rendered footer + IndexNow; wiki noindex-login/vercel-redirect + IndexNow; GitHub org cross-link pass."
   }
 ]
