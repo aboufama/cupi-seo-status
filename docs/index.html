@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CUPI SEO Mission Control</title>
+  <meta name="description" content="Live status board for the CUPI website and wiki SEO campaigns.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <div class="brand">
+        <p class="kicker">Cornell Physical Intelligence</p>
+        <h1>CUPI<span class="sub">SEO campaign status · two properties</span></h1>
+      </div>
+      <div class="center-mark">
+        mission control
+        <b>website + wiki</b>
+      </div>
+      <div class="clock">
+        <div class="label">Last check · America/New_York</div>
+        <div class="now" id="check-time">—</div>
+        <div id="check-tz">loading status.json</div>
+      </div>
+    </header>
+
+    <main class="board" id="board">
+      <article class="col website" data-id="website"></article>
+      <article class="col wiki" data-id="wiki"></article>
+    </main>
+
+    <footer class="foot">
+      <div>CUPI · Cornell Physical Intelligence · public tracker</div>
+      <div><a href="https://github.com/aboufama/cupi-seo-status">github.com/aboufama/cupi-seo-status</a> · refresh with <code>./update.sh</code></div>
+    </footer>
+  </div>
+  <script>
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+    function rel(iso) {
+      if (!iso) return "";
+      const t = Date.parse(iso);
+      if (Number.isNaN(t)) return "";
+      const sec = Math.round((Date.now() - t) / 1000);
+      if (sec < 90) return "just now";
+      if (sec < 3600) return Math.floor(sec / 60) + "m ago";
+      if (sec < 86400) return Math.floor(sec / 3600) + "h ago";
+      return Math.floor(sec / 86400) + "d ago";
+    }
+    function renderCol(el, c) {
+      const ok = !!c.ok;
+      el.classList.toggle("down", !ok);
+      const code = c.http_status == null ? "ERR" : c.http_status;
+      const liveLabel = ok ? "LIVE · " + code : "DOWN · " + code;
+      const shot = c.screenshot_ok && c.screenshot
+        ? '<img src="' + esc(c.screenshot) + '" alt="' + esc(c.name) + ' live capture">'
+        : '<div class="ph"><span>progress screenshot slot</span><span>drop a png in docs/shots/</span></div>';
+      const commits = (c.commits || []).map(function (x) {
+        return '<li><a class="sha" href="' + esc(x.url) + '">' + esc(x.sha) + '</a>' +
+          '<div>' + esc(x.message) +
+          '<span class="when">' + esc(rel(x.date) || x.date || "") +
+          (x.author ? " · " + esc(x.author) : "") + "</span></div></li>";
+      }).join("") || '<li class="empty">No recent commits.</li>';
+      const pulls = (c.pulls || []).map(function (p) {
+        return '<li><a class="sha" href="' + esc(p.url) + '">#' + esc(p.number) + "</a>" +
+          "<div>" + esc(p.title) +
+          '<span class="when">' + esc(p.user || "") + "</span></div></li>";
+      }).join("") || '<p class="empty">No open pull requests.</p>';
+      el.innerHTML =
+        '<div class="col-head"><h2>' + esc(c.name) + '</h2>' +
+        '<div class="live"><span class="dot"></span>' + esc(liveLabel) + "</div></div>" +
+        '<dl class="meta">' +
+          '<div class="row"><dt>Live</dt><dd><a href="' + esc(c.live_url) + '">' + esc(String(c.live_url || "").replace("https://","").replace("http://","")) + "</a></dd></div>" +
+          '<div class="row"><dt>Title</dt><dd>' + esc(c.title || "—") + "</dd></div>" +
+          '<div class="row"><dt>Repo</dt><dd><a href="' + esc(c.repo_url) + '">' + esc(c.repo) + "</a></dd></div>" +
+          '<div class="row"><dt>Last ship</dt><dd>' + esc(c.last_commit_et || "—") + "</dd></div>" +
+        "</dl>" +
+        '<p class="status-line">' + esc(c.status_sentence || "") + "</p>" +
+        '<div class="shot">' + shot + '<div class="cap">progress / live capture</div></div>' +
+        '<div class="section"><h3>Recent commits</h3><ul class="feed">' + commits + "</ul></div>" +
+        '<div class="section"><h3>Open PRs</h3>' +
+          (c.pulls && c.pulls.length ? '<ul class="feed">' + pulls + "</ul>" : pulls) +
+        "</div>";
+    }
+    async function boot() {
+      const res = await fetch("status.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("status.json " + res.status);
+      const data = await res.json();
+      document.getElementById("check-time").textContent = data.generated_at_et || data.generated_at_utc || "—";
+      document.getElementById("check-tz").textContent = data.timezone || "America/New_York";
+      const board = document.getElementById("board");
+      ["website", "wiki"].forEach(function (id) {
+        const el = board.querySelector('[data-id="' + id + '"]');
+        if (data.campaigns && data.campaigns[id]) renderCol(el, data.campaigns[id]);
+      });
+    }
+    boot().catch(function (err) {
+      document.getElementById("check-tz").textContent = "failed to load status.json";
+      console.error(err);
+    });
+  </script>
+</body>
+</html>
