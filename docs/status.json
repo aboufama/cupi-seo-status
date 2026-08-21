@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-21T19:58:13Z",
-  "generated_at_et": "Aug 21, 2026 · 3:58 PM EDT",
+  "generated_at_utc": "2026-08-21T20:37:12Z",
+  "generated_at_et": "Aug 21, 2026 · 4:37 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 21m ago was: Add /about-cupi ranking page for CUPI Cornell and Cornell CUPI (#2). No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 19m ago was: A logged-out fetch of the wiki is real prose, not an empty shell (#1). No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 24m ago was: Add site-wide social card, favicon.ico, and crawlable footer links (#3). No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 35m ago was: README: link live wiki and main site in first paragraph. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,17 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI | Cornell Physical Intelligence at Cornell University",
-      "last_modified": "Fri, 21 Aug 2026 19:37:26 GMT",
-      "bytes": 18223,
+      "last_modified": "Fri, 21 Aug 2026 20:13:55 GMT",
+      "bytes": 19221,
       "ok": true,
       "commits": [
+        {
+          "sha": "a37aa41",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/a37aa4176f810ecaba9fd464fd0758afa16fbd6e",
+          "message": "Add site-wide social card, favicon.ico, and crawlable footer links (#3)",
+          "author": "aboufama",
+          "date": "2026-08-21T20:13:07Z"
+        },
         {
           "sha": "7333f54",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/7333f54bed1e123bf036a8031915c70973994462",
@@ -396,20 +403,13 @@
           "message": "Eliminate shared gallery and art image manifest",
           "author": "Andre Boufama",
           "date": "2026-08-20T01:48:04Z"
-        },
-        {
-          "sha": "c658b12",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/c658b123c4f137eb8edb8454903c3ed70793c6bd",
-          "message": "Generate report image paths without a runtime manifest",
-          "author": "Andre Boufama",
-          "date": "2026-08-20T01:25:59Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 21, 2026 · 3:36 PM EDT"
+      "last_commit_et": "Aug 21, 2026 · 4:13 PM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -421,10 +421,24 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Fri, 21 Aug 2026 19:48:59 GMT",
+      "last_modified": "Fri, 21 Aug 2026 20:01:42 GMT",
       "bytes": 517396,
       "ok": true,
       "commits": [
+        {
+          "sha": "88c5b44",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/88c5b44d43887d21c66a00ba12df3c4a4bd869c2",
+          "message": "README: link live wiki and main site in first paragraph",
+          "author": "aboufama",
+          "date": "2026-08-21T20:01:13Z"
+        },
+        {
+          "sha": "5471b9a",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/5471b9a685a7f39210a6b7de4ac7c782cfd7fb04",
+          "message": "Canonicalize the Vercel host, noindex /login, ship IndexNow key (#3)",
+          "author": "aboufama",
+          "date": "2026-08-21T20:00:48Z"
+        },
         {
           "sha": "6839c56",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/6839c565b892560200627a8bd91f70fcb04280f7",
@@ -452,27 +466,13 @@
           "message": "The Formatting Guide is gone from the product",
           "author": "Andre Boufama",
           "date": "2026-08-21T18:33:45Z"
-        },
-        {
-          "sha": "164a51d",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/164a51dbdf628943fbec31ce1e9d0cf65a6f26c0",
-          "message": "Every state dot is gone, including the one injected mid-typing",
-          "author": "Andre Boufama",
-          "date": "2026-08-21T18:29:01Z"
-        },
-        {
-          "sha": "61a0dc1",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/61a0dc125101e0f86c3feb41486c398be472489f",
-          "message": "Wiki health is just its title",
-          "author": "Andre Boufama",
-          "date": "2026-08-21T18:19:50Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 21, 2026 · 3:38 PM EDT"
+      "last_commit_et": "Aug 21, 2026 · 4:01 PM EDT"
     }
   },
   "agents": [
