@@ -1,0 +1,57 @@
+name: Refresh SEO board
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [seo-status-refresh]
+  push:
+    branches: [main]
+    paths:
+      - "update.sh"
+      - "docs/agents.json"
+      - "docs/ranks.json"
+      - ".github/workflows/refresh.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-status-refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refresh titles, commits, PRs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          chmod +x update.sh
+          ./update.sh
+      - name: Recapture live screenshots
+        continue-on-error: true
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq chromium-browser >/dev/null
+          SCREENSHOT=1 ./update.sh
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Commit if the board changed
+        run: |
+          git config user.name "cupi-seo-status-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/status.json docs/brief.md docs/ranks.json docs/shots docs/agents.json || true
+          if git diff --cached --quiet; then
+            echo "no board change"
+            exit 0
+          fi
+          git commit -m "Refresh SEO board $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

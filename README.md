@@ -1,17 +1,15 @@
-# CUPI SEO status
+# CUPI SEO
 
-Public mission-control board for two parallel SEO campaigns:
+Live: https://aboufama.github.io/cupi-seo-status/
 
-- Website — https://cornellphysicalintelligence.com (`Cornell-Physical-Intelligence/General-Website`)
-- Wiki — https://wiki.cornellphysicalintelligence.com (`Cornell-Physical-Intelligence/wiki`)
+A short public note for two properties:
 
-Live Pages: see `LIVE_URL.txt` after first publish.
+- Website — https://cornellphysicalintelligence.com
+- Wiki — https://wiki.cornellphysicalintelligence.com
 
-## Refresh
+Ranks come from `docs/ranks.json` (a search-index snapshot, not Google Search Console).
+`update.sh` curls live titles, reads commits and open PRs with `gh api` (no clones),
+and rewrites `docs/brief.md` plus `docs/status.json` in prose.
 
-```bash
-./update.sh              # curls titles + gh api commits/PRs → docs/status.json
-SCREENSHOT=1 ./update.sh # also recaptures docs/shots/*.png
-```
-
-Does not clone the CUPI repos. GitHub Pages serves `docs/` from `main`.
+GitHub Actions runs `.github/workflows/refresh.yml` every 30 minutes
+(also `workflow_dispatch` / `repository_dispatch` type `seo-status-refresh`).

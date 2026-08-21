@@ -1,7 +1,169 @@
 {
-  "generated_at_utc": "2026-08-21T16:36:43Z",
-  "generated_at_et": "Aug 21, 2026 · 12:36 PM EDT",
+  "generated_at_utc": "2026-08-21T16:51:25Z",
+  "generated_at_et": "Aug 21, 2026 · 12:51 PM EDT",
   "timezone": "America/New_York",
+  "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The wiki is in 0 of 20. Campus Groups and the GitHub org take most of the #1 slots; the Cornell Parole Initiative still shows up on the short CUPI names. The bare query “CUPI” belongs to Cisco’s API and an Indian fintech — the club does not appear. The wiki URL itself does not rank, because the public page is a Google login wall. Wiki pull request #1 would add crawlable landing prose; it is not merged yet.",
+  "updates": {
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change was: Add the team wiki to the Organization entity graph. No open pull requests. It ranks on 12 of 20 queries (average 2.5 when present) and is not in results for the other 8, including the bare acronym and the project queries.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The public URL is a Google login wall, so a crawler has no public copy to rank. The latest change was: Reconnecting heals a From address that no verified domain can carry. It is not in results for any of the 20 tracked queries (0/20). Open pull request #1 — public crawlable landing — is not merged yet."
+  },
+  "ranks": {
+    "generated_at": "2026-08-21T12:50:37-04:00",
+    "generated_at_et": "Aug 21, 2026 · 12:50 PM EDT",
+    "source": "search snapshot",
+    "disclaimer": "Search-index snapshot, not Google Search Console. Positions are among returned web results. Never invent a missing rank.",
+    "official_host": "cornellphysicalintelligence.com",
+    "wiki_host": "wiki.cornellphysicalintelligence.com",
+    "averages": {
+      "official_mean_when_ranked": 2.5,
+      "official_ranked_count": 12,
+      "official_miss_count": 8,
+      "wiki_ranked_count": 0,
+      "wiki_miss_count": 20
+    },
+    "queries": [
+      {
+        "q": "Cornell CUPI",
+        "official_rank": 2,
+        "wiki_rank": null,
+        "top": "Campus Groups",
+        "notes": "GitHub org 3, Parole Initiative 4."
+      },
+      {
+        "q": "CUPI Cornell",
+        "official_rank": 2,
+        "wiki_rank": null,
+        "top": "Campus Groups",
+        "notes": "Ollie Aizer LinkedIn 3, Parole 4."
+      },
+      {
+        "q": "Cornell Physical Intelligence",
+        "official_rank": 3,
+        "wiki_rank": null,
+        "top": "Campus Groups",
+        "notes": "GitHub org 2, LinkedIn 5."
+      },
+      {
+        "q": "Cornell Physical Intelligence Club",
+        "official_rank": 2,
+        "wiki_rank": null,
+        "top": "GitHub org",
+        "notes": "Campus Groups 3-5."
+      },
+      {
+        "q": "Cornell Physical Intelligence Ithaca",
+        "official_rank": 3,
+        "wiki_rank": null,
+        "top": "Campus Groups",
+        "notes": "GitHub org 2, LinkedIn 4."
+      },
+      {
+        "q": "Cornell CUPI club",
+        "official_rank": 3,
+        "wiki_rank": null,
+        "top": "Campus Groups",
+        "notes": "Campus Groups signup 2, Parole 4-5."
+      },
+      {
+        "q": "CUPI Cornell club",
+        "official_rank": 2,
+        "wiki_rank": null,
+        "top": "Campus Groups",
+        "notes": "Parole 3-4."
+      },
+      {
+        "q": "cornellphysicalintelligence",
+        "official_rank": 3,
+        "wiki_rank": null,
+        "top": "GitHub org",
+        "notes": "GitHub website repo 2."
+      },
+      {
+        "q": "physical intelligence Cornell",
+        "official_rank": 1,
+        "wiki_rank": null,
+        "top": "Official site",
+        "notes": "CEI lab 2, pi0 paper 3."
+      },
+      {
+        "q": "CUPI robotics Cornell",
+        "official_rank": 3,
+        "wiki_rank": null,
+        "top": "GitHub org",
+        "notes": "GitHub website repo 2."
+      },
+      {
+        "q": "Cornell CUPI robotics",
+        "official_rank": 3,
+        "wiki_rank": null,
+        "top": "GitHub org",
+        "notes": "GitHub website repo 2."
+      },
+      {
+        "q": "Cornell robotics club CUPI",
+        "official_rank": 3,
+        "wiki_rank": null,
+        "top": "GitHub website repo",
+        "notes": "GitHub org 2."
+      },
+      {
+        "q": "CUPI",
+        "official_rank": null,
+        "wiki_rank": null,
+        "top": "Cisco Unity CUPI API",
+        "notes": "Indian fintech CUPI is 5. Club is invisible on the bare acronym."
+      },
+      {
+        "q": "CUPI wiki",
+        "official_rank": null,
+        "wiki_rank": null,
+        "top": "Cisco Unity CUPI API",
+        "notes": "Wiki domain never appears."
+      },
+      {
+        "q": "Cornell Physical Intelligence wiki",
+        "official_rank": null,
+        "wiki_rank": null,
+        "top": "GitHub org",
+        "notes": "Physical Intelligence Inc Wikipedia 2. Wiki domain missing."
+      },
+      {
+        "q": "wiki.cornellphysicalintelligence.com",
+        "official_rank": null,
+        "wiki_rank": null,
+        "top": "Campus Groups",
+        "notes": "The wiki URL itself does not rank."
+      },
+      {
+        "q": "cuphysint",
+        "official_rank": null,
+        "wiki_rank": null,
+        "top": "GitHub org",
+        "notes": "Campus Groups 2. Official site missing."
+      },
+      {
+        "q": "CUPI Cornell hexapod",
+        "official_rank": null,
+        "wiki_rank": null,
+        "top": "Campus Groups",
+        "notes": "ECE 4760 hexapod is 4, not a CUPI project page."
+      },
+      {
+        "q": "CUPI Cornell drone",
+        "official_rank": null,
+        "wiki_rank": null,
+        "top": "CU AutoDrone Giving Day",
+        "notes": "CUAD and CUAir own drone queries. Campus Groups 5."
+      },
+      {
+        "q": "Cornell embodied AI club",
+        "official_rank": null,
+        "wiki_rank": null,
+        "top": "Campus Groups",
+        "notes": "Official site missed. CEI lab 2, CAM 3."
+      }
+    ]
+  },
   "campaigns": {
     "website": {
       "id": "website",
@@ -129,5 +291,13 @@
       "status_sentence": "Wiki is live (HTTP 200). Latest ship 5m ago: Reconnecting heals a From address that no verified domain can carry. No open PRs.",
       "last_commit_et": "Aug 21, 2026 · 12:30 PM EDT"
     }
-  }
+  },
+  "agents": [
+    {
+      "by": "Athos",
+      "at": "2026-08-21T12:41:00-04:00",
+      "note": "Wiki SEO PR open: https://github.com/Cornell-Physical-Intelligence/wiki/pull/1 (public crawlable landing). Website PR still in progress. Board now auto-refreshes via GitHub Actions every 30 minutes."
+    }
+  ],
+  "refresh": "github-actions-every-30m"
 }
