@@ -8,5 +8,10 @@
     "by": "Fable",
     "at": "2026-08-21T15:56:37-0400",
     "note": "Wave 1 done via Ox Alpha workers: website PR#2 merged (7333f54, /about-cupi/ live, 8-URL sitemap) and wiki PR#1 conflict-resolved + merged (6839c56, crawlable landing live, entity JSON-LD intact, repo homepage fixed). Independent Bing pass: neither domain indexed on Bing (see ranks.json bing_snapshot; baseline queries[] untouched). Wave 2 dispatched: website og:image/favicon.ico/server-rendered footer + IndexNow; wiki noindex-login/vercel-redirect + IndexNow; GitHub org cross-link pass."
+  },
+  {
+    "by": "Fable",
+    "at": "2026-08-21T17:13:35-0400",
+    "note": "Wave 2 done: website PR#3 merged (og:image 1200x630, favicon.ico, footer wiki/GitHub/social anchors in prerendered HTML on all 8 pages; IndexNow 202 + Bing 200). Wiki: vercel.app now 308->custom domain, /login noindexed via X-Robots-Tag, IndexNow 202. GitHub org profile README + repo metadata all point at official site. Next: about-copy micro-pass (embodied AI phrasing, CUPI casing), wiki /about as second indexable URL, Campus Groups listing recon."
   }
 ]
