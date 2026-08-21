@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-21T16:51:25Z",
-  "generated_at_et": "Aug 21, 2026 · 12:51 PM EDT",
+  "generated_at_utc": "2026-08-21T16:55:51Z",
+  "generated_at_et": "Aug 21, 2026 · 12:55 PM EDT",
   "timezone": "America/New_York",
-  "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The wiki is in 0 of 20. Campus Groups and the GitHub org take most of the #1 slots; the Cornell Parole Initiative still shows up on the short CUPI names. The bare query “CUPI” belongs to Cisco’s API and an Indian fintech — the club does not appear. The wiki URL itself does not rank, because the public page is a Google login wall. Wiki pull request #1 would add crawlable landing prose; it is not merged yet.",
+  "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index. Wiki pull request #1 (Public landing is crawlable prose, not an empty sign-in shell) is open and not merged yet. Until that ships, the wiki stays invisible to search. Website pull request #2 (SEO ranking pass: CUPI Cornell /about-cupi page) is still open.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change was: Add the team wiki to the Organization entity graph. No open pull requests. It ranks on 12 of 20 queries (average 2.5 when present) and is not in results for the other 8, including the bare acronym and the project queries.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The public URL is a Google login wall, so a crawler has no public copy to rank. The latest change was: Reconnecting heals a From address that no verified domain can carry. It is not in results for any of the 20 tracked queries (0/20). Open pull request #1 — public crawlable landing — is not merged yet."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 1d ago was: Add the team wiki to the Organization entity graph. Open pull request #2 — SEO ranking pass: CUPI Cornell /about-cupi page. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 3m ago was: Status words carry their own color; the little dots are gone. Open pull request #1 — Public landing is crawlable prose, not an empty sign-in shell. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -162,7 +162,8 @@
         "top": "Campus Groups",
         "notes": "Official site missed. CEI lab 2, CAM 3."
       }
-    ]
+    ],
+    "official_average": 2.5
   },
   "campaigns": {
     "website": {
@@ -172,6 +173,7 @@
       "repo": "Cornell-Physical-Intelligence/General-Website",
       "repo_url": "https://github.com/Cornell-Physical-Intelligence/General-Website",
       "screenshot": "shots/website.png",
+      "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI | Cornell Physical Intelligence at Cornell University",
       "last_modified": "Thu, 20 Aug 2026 05:07:41 GMT",
@@ -221,11 +223,18 @@
           "date": "2026-08-20T01:14:38Z"
         }
       ],
-      "pulls": [],
+      "pulls": [
+        {
+          "number": 2,
+          "title": "SEO ranking pass: CUPI Cornell /about-cupi page",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/pull/2",
+          "user": "aboufama",
+          "created_at": "2026-08-21T16:46:12Z"
+        }
+      ],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "status_sentence": "Website is live (HTTP 200). Latest ship 1d ago: Add the team wiki to the Organization entity graph. No open PRs.",
       "last_commit_et": "Aug 20, 2026 · 1:06 AM EDT"
     },
     "wiki": {
@@ -235,12 +244,34 @@
       "repo": "Cornell-Physical-Intelligence/wiki",
       "repo_url": "https://github.com/Cornell-Physical-Intelligence/wiki",
       "screenshot": "shots/wiki.png",
+      "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Fri, 21 Aug 2026 16:33:06 GMT",
-      "bytes": 479596,
+      "last_modified": "Fri, 21 Aug 2026 16:53:11 GMT",
+      "bytes": 481231,
       "ok": true,
       "commits": [
+        {
+          "sha": "e551001",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/e551001bbcb531b33a96638600a2623a342a7891",
+          "message": "Status words carry their own color; the little dots are gone",
+          "author": "Andre Boufama",
+          "date": "2026-08-21T16:52:43Z"
+        },
+        {
+          "sha": "6569b09",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/6569b097555fe6777118d0c37886dffa67300a48",
+          "message": "Drop the Add members caption; the placeholder says it all",
+          "author": "Andre Boufama",
+          "date": "2026-08-21T16:51:27Z"
+        },
+        {
+          "sha": "b31c5ca",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/b31c5ca06b5293d6acbd196e65fb85a6eecc719d",
+          "message": "Email section is an integration card",
+          "author": "Andre Boufama",
+          "date": "2026-08-21T16:45:05Z"
+        },
         {
           "sha": "76b8582",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/76b85822d7e7b70a934f956bffdc76bcd5c60c66",
@@ -261,35 +292,21 @@
           "message": "Manual email config folds behind a quiet disclosure",
           "author": "Andre Boufama",
           "date": "2026-08-21T16:24:56Z"
-        },
-        {
-          "sha": "b99568f",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/b99568f220b2042fe7978b28c197db22cb2ade59",
-          "message": "One-click Connect Resend via OAuth 2.1 + PKCE",
-          "author": "Andre Boufama",
-          "date": "2026-08-21T15:52:16Z"
-        },
-        {
-          "sha": "04c8954",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/04c8954407b069b58c208fc40239250e2dbfd7cb",
-          "message": "Email is an in-app integration: every org brings its own Resend",
-          "author": "Andre Boufama",
-          "date": "2026-08-21T15:42:39Z"
-        },
-        {
-          "sha": "c53cd83",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/c53cd8351076534d0ed32e087e7077a92aa4f43a",
-          "message": "The From address finds the verified Resend domain by itself",
-          "author": "Andre Boufama",
-          "date": "2026-08-21T15:35:19Z"
         }
       ],
-      "pulls": [],
+      "pulls": [
+        {
+          "number": 1,
+          "title": "Public landing is crawlable prose, not an empty sign-in shell",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/pull/1",
+          "user": "aboufama",
+          "created_at": "2026-08-21T16:41:27Z"
+        }
+      ],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "status_sentence": "Wiki is live (HTTP 200). Latest ship 5m ago: Reconnecting heals a From address that no verified domain can carry. No open PRs.",
-      "last_commit_et": "Aug 21, 2026 · 12:30 PM EDT"
+      "last_commit_et": "Aug 21, 2026 · 12:52 PM EDT"
     }
   },
   "agents": [
