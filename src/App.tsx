@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 
 import { Badge } from "@/components/ui/badge"
 import {
@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { Progress } from "@/components/ui/progress"
 import {
   Table,
   TableBody,
@@ -17,6 +18,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { cn } from "@/lib/utils"
 
 type RankQuery = {
   q?: string
@@ -66,6 +68,15 @@ type Status = {
   campaigns?: { website?: Campaign; wiki?: Campaign }
 }
 
+const STAIR_STEPS = [5, 4, 3, 2, 1] as const
+const STAIR_H: Record<(typeof STAIR_STEPS)[number], string> = {
+  5: "h-1.5",
+  4: "h-2",
+  3: "h-2.5",
+  2: "h-3",
+  1: "h-3.5",
+}
+
 function statusUrl() {
   return `${import.meta.env.BASE_URL}status.json`
 }
@@ -99,6 +110,45 @@ function average(rows: RankQuery[]) {
     .filter((n): n is number => typeof n === "number")
   if (!nums.length) return null
   return Math.round((nums.reduce((a, b) => a + b, 0) / nums.length) * 10) / 10
+}
+
+function stairKey(row: RankQuery) {
+  const r = officialRank(row)
+  return r == null ? Number.POSITIVE_INFINITY : r
+}
+
+function stairSorted(rows: RankQuery[]) {
+  return rows
+    .map((row, i) => ({ row, i }))
+    .sort((a, b) => {
+      const da = stairKey(a.row)
+      const db = stairKey(b.row)
+      if (da !== db) return da - db
+      return a.i - b.i
+    })
+    .map(({ row }) => row)
+}
+
+function pct(part: number, total: number) {
+  if (!total) return 0
+  return (part / total) * 100
+}
+
+function Stair({ rank }: { rank: number | null }) {
+  return (
+    <span className="mt-1.5 flex items-end gap-px" aria-hidden>
+      {STAIR_STEPS.map((step) => (
+        <span
+          key={step}
+          className={cn(
+            "w-1.5 rounded-[1px]",
+            STAIR_H[step],
+            rank === step ? "bg-primary" : "bg-muted-foreground/20"
+          )}
+        />
+      ))}
+    </span>
+  )
 }
 
 function PropertyCard({
@@ -169,15 +219,17 @@ export default function App() {
 
   const ranks = data?.ranks
   const queries = ranks?.queries ?? []
+  const sorted = useMemo(() => stairSorted(queries), [queries])
   const av = ranks?.averages
   const avg =
     av?.official_mean_when_ranked ??
     ranks?.official_average ??
     ranks?.website_average ??
     average(queries)
-  const ranked = av?.official_ranked_count
-  const wikiHit = av?.wiki_ranked_count
-  const wikiN = av?.wiki_miss_count ?? queries.length
+  const total = queries.length
+  const at1 = queries.filter((row) => officialRank(row) === 1).length
+  const officialHit = queries.filter((row) => officialRank(row) != null).length
+  const wikiHit = queries.filter((row) => wikiRank(row) != null).length
   const when = ranks?.generated_at_et || ranks?.as_of_et || ""
   const disclaimer =
     ranks?.disclaimer ||
@@ -193,7 +245,46 @@ export default function App() {
         </p>
       </header>
 
-      <section className="mt-8">
+      <section className="mt-12 sm:mt-16">
+        <div className="flex flex-wrap items-end gap-x-5 gap-y-1">
+          <p className="text-[clamp(5rem,16vw,10rem)] font-medium leading-none tracking-tight tabular-nums">
+            {total ? at1 : "—"}
+            <span className="text-muted-foreground"> / {total || "—"}</span>
+          </p>
+          <p className="mb-3 text-2xl font-medium text-muted-foreground sm:mb-5 sm:text-3xl">
+            at #1
+          </p>
+        </div>
+        <Progress
+          value={pct(at1, total)}
+          className="mt-6 h-16 w-full sm:h-20"
+        />
+        <div className="mt-8 grid gap-5 sm:grid-cols-2">
+          <div>
+            <div className="mb-2 flex items-baseline justify-between gap-4">
+              <p className="text-sm">Official site on the index</p>
+              <p className="tabular-nums text-sm">
+                {total ? `${officialHit} / ${total}` : "—"}
+              </p>
+            </div>
+            <Progress value={pct(officialHit, total)} className="h-2.5" />
+          </div>
+          <div>
+            <div className="mb-2 flex items-baseline justify-between gap-4">
+              <p className="text-sm">Wiki on the index</p>
+              <p className="tabular-nums text-sm">
+                {total ? `${wikiHit} / ${total}` : "—"}
+              </p>
+            </div>
+            <Progress value={pct(wikiHit, total)} className="h-2.5" />
+          </div>
+        </div>
+        <p className="mt-6 text-[15px] text-muted-foreground">
+          Goal is #1 on every string, climbed closest first.
+        </p>
+      </section>
+
+      <section className="mt-10">
         <p className="max-w-3xl text-[17px] leading-[1.7] text-foreground">
           {data?.brief ?? (error ? "Could not load the latest note." : "")}
         </p>
@@ -211,8 +302,8 @@ export default function App() {
           <CardContent className="px-2 sm:px-5">
             <p className="mb-3 px-3 text-sm sm:px-0">
               Official site average {avg ?? "—"}
-              {ranked != null ? ` on the ${ranked} that ranked` : ""}. Wiki{" "}
-              {wikiHit ?? 0}/{wikiN}.
+              {officialHit ? ` on the ${officialHit} that ranked` : ""}. Wiki{" "}
+              {wikiHit}/{total || 0}.
             </p>
             <Table>
               <TableHeader>
@@ -225,18 +316,28 @@ export default function App() {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {queries.length ? (
-                  queries.map((row) => (
-                    <TableRow key={qText(row)}>
-                      <TableCell className="font-medium">{qText(row)}</TableCell>
-                      <TableCell>{rankCell(officialRank(row))}</TableCell>
-                      <TableCell>{rankCell(wikiRank(row))}</TableCell>
-                      <TableCell>{row.top || "—"}</TableCell>
-                      <TableCell className="text-muted-foreground">
-                        {row.notes || ""}
-                      </TableCell>
-                    </TableRow>
-                  ))
+                {sorted.length ? (
+                  sorted.map((row) => {
+                    const official = officialRank(row)
+                    return (
+                      <TableRow key={qText(row)}>
+                        <TableCell className="font-medium">
+                          {qText(row)}
+                        </TableCell>
+                        <TableCell>
+                          <div>
+                            {rankCell(official)}
+                            <Stair rank={official} />
+                          </div>
+                        </TableCell>
+                        <TableCell>{rankCell(wikiRank(row))}</TableCell>
+                        <TableCell>{row.top || "—"}</TableCell>
+                        <TableCell className="text-muted-foreground">
+                          {row.notes || ""}
+                        </TableCell>
+                      </TableRow>
+                    )
+                  })
                 ) : (
                   <TableRow>
                     <TableCell colSpan={5} className="text-muted-foreground">
