@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-21T16:55:51Z",
-  "generated_at_et": "Aug 21, 2026 · 12:55 PM EDT",
+  "generated_at_utc": "2026-08-21T17:11:52Z",
+  "generated_at_et": "Aug 21, 2026 · 1:11 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index. Wiki pull request #1 (Public landing is crawlable prose, not an empty sign-in shell) is open and not merged yet. Until that ships, the wiki stays invisible to search. Website pull request #2 (SEO ranking pass: CUPI Cornell /about-cupi page) is still open.",
   "updates": {
     "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 1d ago was: Add the team wiki to the Organization entity graph. Open pull request #2 — SEO ranking pass: CUPI Cornell /about-cupi page. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 3m ago was: Status words carry their own color; the little dots are gone. Open pull request #1 — Public landing is crawlable prose, not an empty sign-in shell. It is not in the top results for any tracked query."
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 19m ago was: Status words carry their own color; the little dots are gone. Open pull request #1 — Public landing is crawlable prose, not an empty sign-in shell. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -165,6 +165,20 @@
     ],
     "official_average": 2.5
   },
+  "history": {
+    "timezone": "America/New_York",
+    "days": [
+      {
+        "date": "2026-08-21",
+        "at1": 1,
+        "official_on_index": 12,
+        "wiki_on_index": 0,
+        "official_avg": 2.5,
+        "n_queries": 20,
+        "source": "search snapshot"
+      }
+    ]
+  },
   "campaigns": {
     "website": {
       "id": "website",
@@ -247,7 +261,7 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Fri, 21 Aug 2026 16:53:11 GMT",
+      "last_modified": "Fri, 21 Aug 2026 16:53:05 GMT",
       "bytes": 481231,
       "ok": true,
       "commits": [
@@ -316,19 +330,5 @@
       "note": "Wiki SEO PR open: https://github.com/Cornell-Physical-Intelligence/wiki/pull/1 (public crawlable landing). Website PR still in progress. Board now auto-refreshes via GitHub Actions every 30 minutes."
     }
   ],
-  "refresh": "github-actions-every-30m",
-  "history": {
-    "timezone": "America/New_York",
-    "days": [
-      {
-        "date": "2026-08-21",
-        "at1": 1,
-        "official_on_index": 12,
-        "wiki_on_index": 0,
-        "official_avg": 2.5,
-        "n_queries": 20,
-        "source": "search snapshot"
-      }
-    ]
-  }
+  "refresh": "github-actions-every-30m"
 }
