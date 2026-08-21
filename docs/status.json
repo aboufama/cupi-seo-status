@@ -316,5 +316,19 @@
       "note": "Wiki SEO PR open: https://github.com/Cornell-Physical-Intelligence/wiki/pull/1 (public crawlable landing). Website PR still in progress. Board now auto-refreshes via GitHub Actions every 30 minutes."
     }
   ],
-  "refresh": "github-actions-every-30m"
+  "refresh": "github-actions-every-30m",
+  "history": {
+    "timezone": "America/New_York",
+    "days": [
+      {
+        "date": "2026-08-21",
+        "at1": 1,
+        "official_on_index": 12,
+        "wiki_on_index": 0,
+        "official_avg": 2.5,
+        "n_queries": 20,
+        "source": "search snapshot"
+      }
+    ]
+  }
 }

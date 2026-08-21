@@ -4,3 +4,5 @@ dist
 *.swp
 .env
 *.local
+
+__pycache__/

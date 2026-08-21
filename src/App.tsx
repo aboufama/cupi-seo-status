@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useMemo, useState, type MouseEvent } from "react"
 
 import { Badge } from "@/components/ui/badge"
 import {
@@ -60,11 +60,27 @@ type Campaign = {
   ok?: boolean
 }
 
+type HistoryDay = {
+  date: string
+  at1: number
+  official_on_index: number
+  wiki_on_index?: number
+  official_avg?: number | null
+  n_queries: number
+  source?: string
+}
+
+type History = {
+  timezone?: string
+  days: HistoryDay[]
+}
+
 type Status = {
   generated_at_et?: string
   brief?: string
   updates?: { website?: string; wiki?: string }
   ranks?: Ranks | null
+  history?: History
   campaigns?: { website?: Campaign; wiki?: Campaign }
 }
 
@@ -79,6 +95,10 @@ const STAIR_H: Record<(typeof STAIR_STEPS)[number], string> = {
 
 function statusUrl() {
   return `${import.meta.env.BASE_URL}status.json`
+}
+
+function historyUrl() {
+  return `${import.meta.env.BASE_URL}history.json`
 }
 
 function shotUrl(src: string) {
@@ -201,8 +221,328 @@ function PropertyCard({
   )
 }
 
+function parseYmd(ymd: string) {
+  const [y, m, d] = ymd.split("-").map(Number)
+  return new Date(Date.UTC(y, (m || 1) - 1, d || 1))
+}
+
+function ymdOf(dt: Date) {
+  return dt.toISOString().slice(0, 10)
+}
+
+function addDays(ymd: string, n: number) {
+  const dt = parseYmd(ymd)
+  dt.setUTCDate(dt.getUTCDate() + n)
+  return ymdOf(dt)
+}
+
+function isoWeekStart(ymd: string) {
+  const dt = parseYmd(ymd)
+  const dow = dt.getUTCDay() || 7
+  dt.setUTCDate(dt.getUTCDate() - (dow - 1))
+  return ymdOf(dt)
+}
+
+function shortDate(ymd: string) {
+  return parseYmd(ymd).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  })
+}
+
+function dayTickLabel(ymd: string, i: number, ticks: string[]) {
+  const dt = parseYmd(ymd)
+  if (i === 0) return shortDate(ymd)
+  const prev = parseYmd(ticks[i - 1])
+  if (prev.getUTCMonth() !== dt.getUTCMonth()) return shortDate(ymd)
+  return String(dt.getUTCDate())
+}
+
+function realDays(history: History) {
+  return [...(history.days || [])]
+    .filter((d) => d && typeof d.date === "string")
+    .sort((a, b) => a.date.localeCompare(b.date))
+}
+
+function dayAxis(days: HistoryDay[]) {
+  if (!days.length) return []
+  const first = days[0].date
+  const last = days[days.length - 1].date
+  const weekEnd = addDays(isoWeekStart(last), 6)
+  let end = last > weekEnd ? last : weekEnd
+  const span = Math.round(
+    (parseYmd(end).getTime() - parseYmd(first).getTime()) / 86400000
+  )
+  if (span < 6) end = addDays(first, 6)
+  const ticks: string[] = []
+  for (let d = first; d <= end; d = addDays(d, 1)) ticks.push(d)
+  return ticks
+}
+
+function weekBuckets(days: HistoryDay[]) {
+  const lastByWeek = new Map<string, HistoryDay>()
+  for (const d of days) lastByWeek.set(isoWeekStart(d.date), d)
+  return [...lastByWeek.entries()].map(([start, day]) => ({ start, day }))
+}
+
+function weekAxis(buckets: { start: string }[]) {
+  if (!buckets.length) return []
+  const first = buckets[0].start
+  const last = buckets[buckets.length - 1].start
+  let end = last
+  if (buckets.length < 8) end = addDays(first, 7 * 7)
+  if (last > end) end = last
+  const ticks: string[] = []
+  for (let d = first; d <= end; d = addDays(d, 7)) ticks.push(d)
+  return ticks
+}
+
+type PlotPoint = {
+  key: string
+  label: string
+  at1: number
+  official: number
+}
+
+function ClimbCard({ history }: { history: History }) {
+  const [mode, setMode] = useState<"days" | "weeks">("days")
+  const [hover, setHover] = useState<number | null>(null)
+
+  const days = useMemo(() => realDays(history), [history])
+  if (!days.length) return null
+
+  const useWeeks = mode === "weeks" && days.length >= 8
+  const buckets = weekBuckets(days)
+  const ticks = useWeeks ? weekAxis(buckets) : dayAxis(days)
+  const byKey = new Map<string, HistoryDay>()
+  if (useWeeks) {
+    for (const b of buckets) byKey.set(b.start, b.day)
+  } else {
+    for (const d of days) byKey.set(d.date, d)
+  }
+
+  const points: PlotPoint[] = ticks.flatMap((key) => {
+    const d = byKey.get(key)
+    if (!d) return []
+    return [
+      {
+        key,
+        label: useWeeks ? shortDate(key) : shortDate(d.date),
+        at1: d.at1,
+        official: d.official_on_index,
+      },
+    ]
+  })
+
+  const yMax = Math.max(
+    20,
+    ...days.map((d) => d.n_queries || 0),
+    ...days.map((d) => d.at1 || 0),
+    ...days.map((d) => d.official_on_index || 0)
+  )
+  const yTicks = [0, 5, 10, 15, 20].filter((n) => n <= yMax)
+  if (yTicks[yTicks.length - 1] !== yMax) yTicks.push(yMax)
+
+  const W = 640
+  const H = 200
+  const pad = { l: 28, r: 18, t: 22, b: 28 }
+  const innerW = W - pad.l - pad.r
+  const innerH = H - pad.t - pad.b
+  const xOf = (i: number) =>
+    pad.l + (ticks.length <= 1 ? innerW / 2 : (i / (ticks.length - 1)) * innerW)
+  const yOf = (v: number) => pad.t + innerH * (1 - v / yMax)
+
+  const series = (key: "at1" | "official") =>
+    points.map((p) => {
+      const i = ticks.indexOf(p.key)
+      return `${xOf(i)},${yOf(p[key])}`
+    })
+
+  const last = points[points.length - 1]
+  const active =
+    hover != null && points[hover] ? points[hover] : last
+  const activeI = active ? ticks.indexOf(active.key) : -1
+
+  function onMove(ev: MouseEvent<SVGRectElement>) {
+    const svg = ev.currentTarget.ownerSVGElement
+    if (!svg || !points.length) return
+    const rect = svg.getBoundingClientRect()
+    const x = ((ev.clientX - rect.left) / rect.width) * W
+    let best = 0
+    let bestD = Infinity
+    points.forEach((p, i) => {
+      const d = Math.abs(xOf(ticks.indexOf(p.key)) - x)
+      if (d < bestD) {
+        best = i
+        bestD = d
+      }
+    })
+    setHover(bestD < 48 ? best : null)
+  }
+
+  return (
+    <section className="mt-10">
+      <Card className="gap-4 py-5">
+        <CardHeader className="px-5">
+          <CardTitle className="text-base font-medium">Climb</CardTitle>
+          <CardAction>
+            <div className="flex items-center gap-3 text-xs">
+              <button
+                type="button"
+                aria-pressed={mode === "days"}
+                onClick={() => setMode("days")}
+                className={cn(
+                  mode === "days" ? "text-foreground" : "text-muted-foreground"
+                )}
+              >
+                Days
+              </button>
+              <button
+                type="button"
+                aria-pressed={mode === "weeks"}
+                onClick={() => setMode("weeks")}
+                className={cn(
+                  mode === "weeks" ? "text-foreground" : "text-muted-foreground"
+                )}
+              >
+                Weeks
+              </button>
+            </div>
+          </CardAction>
+        </CardHeader>
+        <CardContent className="px-2 sm:px-5">
+          <svg
+            viewBox={`0 0 ${W} ${H}`}
+            className="h-auto w-full"
+            role="img"
+            aria-label="Queries at number one over days"
+            onMouseLeave={() => setHover(null)}
+          >
+            {yTicks.map((n) => (
+              <g key={n}>
+                <line
+                  x1={pad.l}
+                  x2={W - pad.r}
+                  y1={yOf(n)}
+                  y2={yOf(n)}
+                  className="stroke-border"
+                  strokeWidth="1"
+                />
+                <text
+                  x={pad.l - 8}
+                  y={yOf(n) + 3}
+                  textAnchor="end"
+                  fontSize="11"
+                  className="fill-muted-foreground tabular-nums"
+                >
+                  {n}
+                </text>
+              </g>
+            ))}
+            {ticks.map((t, i) => (
+              <text
+                key={t}
+                x={xOf(i)}
+                y={H - 8}
+                textAnchor={
+                  i === 0 ? "start" : i === ticks.length - 1 ? "end" : "middle"
+                }
+                fontSize="11"
+                className="fill-muted-foreground tabular-nums"
+              >
+                {useWeeks ? shortDate(t) : dayTickLabel(t, i, ticks)}
+              </text>
+            ))}
+            {series("official").length > 1 ? (
+              <polyline
+                fill="none"
+                points={series("official").join(" ")}
+                className="stroke-muted-foreground/45"
+                strokeWidth="1.25"
+                strokeLinejoin="round"
+                strokeLinecap="round"
+              />
+            ) : null}
+            {series("at1").length > 1 ? (
+              <polyline
+                fill="none"
+                points={series("at1").join(" ")}
+                className="stroke-primary"
+                strokeWidth="2"
+                strokeLinejoin="round"
+                strokeLinecap="round"
+              />
+            ) : null}
+            {points.map((p) => {
+              const i = ticks.indexOf(p.key)
+              return (
+                <circle
+                  key={`off-${p.key}`}
+                  cx={xOf(i)}
+                  cy={yOf(p.official)}
+                  r="2.5"
+                  className="fill-muted-foreground/55"
+                />
+              )
+            })}
+            {points.map((p) => {
+              const i = ticks.indexOf(p.key)
+              return (
+                <circle
+                  key={`at1-${p.key}`}
+                  cx={xOf(i)}
+                  cy={yOf(p.at1)}
+                  r="3.5"
+                  className="fill-primary"
+                />
+              )
+            })}
+            {last ? (
+              <text
+                x={xOf(ticks.indexOf(last.key)) + 8}
+                y={yOf(last.at1) + 4}
+                fontSize="11"
+                className="fill-foreground tabular-nums"
+              >
+                {last.at1}
+              </text>
+            ) : null}
+            {active && activeI >= 0 && hover != null ? (
+              <text
+                x={xOf(activeI)}
+                y={pad.t - 4}
+                textAnchor={
+                  activeI === 0
+                    ? "start"
+                    : activeI === ticks.length - 1
+                      ? "end"
+                      : "middle"
+                }
+                fontSize="11"
+                className="fill-muted-foreground tabular-nums"
+              >
+                {active.label} · {active.at1} at #1 · {active.official} on the index
+              </text>
+            ) : null}
+            <rect
+              x={pad.l}
+              y={pad.t}
+              width={innerW}
+              height={innerH}
+              fill="transparent"
+              onMouseMove={onMove}
+            />
+          </svg>
+        </CardContent>
+      </Card>
+    </section>
+  )
+}
+
 export default function App() {
   const [data, setData] = useState<Status | null>(null)
+  const [history, setHistory] = useState<History | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
@@ -211,10 +551,26 @@ export default function App() {
         if (!res.ok) throw new Error(`status.json ${res.status}`)
         return res.json()
       })
-      .then((json: Status) => setData(json))
+      .then((json: Status) => {
+        setData(json)
+        if (json.history?.days?.length) {
+          setHistory((prev) => prev ?? json.history ?? null)
+        }
+      })
       .catch((err: unknown) =>
         setError(err instanceof Error ? err.message : "failed to load")
       )
+    fetch(historyUrl(), { cache: "no-store" })
+      .then((res) => {
+        if (!res.ok) throw new Error(`history.json ${res.status}`)
+        return res.json()
+      })
+      .then((json: History) => {
+        if (json?.days?.length) setHistory(json)
+      })
+      .catch(() => {
+        /* hide the graph rather than invent points */
+      })
   }, [])
 
   const ranks = data?.ranks
@@ -283,6 +639,8 @@ export default function App() {
           Goal is #1 on every string, climbed closest first.
         </p>
       </section>
+
+      {history?.days?.length ? <ClimbCard history={history} /> : null}
 
       <section className="mt-10">
         <p className="max-w-3xl text-[17px] leading-[1.7] text-foreground">

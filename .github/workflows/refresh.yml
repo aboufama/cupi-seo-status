@@ -48,7 +48,7 @@ jobs:
         run: |
           git config user.name "cupi-seo-status-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/status.json docs/brief.md docs/ranks.json docs/shots docs/agents.json || true
+          git add docs/status.json docs/brief.md docs/ranks.json docs/history.json docs/shots docs/agents.json || true
           if git diff --cached --quiet; then
             echo "no board change"
             exit 0

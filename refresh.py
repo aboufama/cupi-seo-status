@@ -382,6 +382,66 @@ def property_paragraph(c, ranks, now, kind):
     return " ".join(parts)
 
 
+def snapshot_day(ranks, now):
+    """One America/New_York calendar day from the current ranks snapshot."""
+    queries = ranks.get("queries") or []
+    date = now.astimezone(ET).strftime("%Y-%m-%d")
+    raw = ranks.get("generated_at")
+    if raw:
+        try:
+            dt = datetime.fromisoformat(str(raw).replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=ET)
+            date = dt.astimezone(ET).strftime("%Y-%m-%d")
+        except Exception:
+            pass
+    av = ranks.get("averages") or {}
+    at1 = sum(1 for q in queries if official_rank(q) == 1)
+    official_on = av.get("official_ranked_count")
+    if official_on is None:
+        official_on = sum(1 for q in queries if official_rank(q) is not None)
+    wiki_on = av.get("wiki_ranked_count")
+    if wiki_on is None:
+        wiki_on = sum(1 for q in queries if wiki_rank(q) is not None)
+    official_avg = av.get("official_mean_when_ranked")
+    if official_avg is None:
+        official_avg = ranks.get("official_average")
+    if official_avg is None:
+        official_avg = official_average(queries)
+    return {
+        "date": date,
+        "at1": at1,
+        "official_on_index": official_on,
+        "wiki_on_index": wiki_on,
+        "official_avg": official_avg,
+        "n_queries": len(queries),
+        "source": ranks.get("source") or "search snapshot",
+    }
+
+
+def upsert_history(docs, ranks, now):
+    """Write today's point into docs/history.json. Same-day refresh overwrites."""
+    path = os.path.join(docs, "history.json")
+    hist = load_json(path, None)
+    if not isinstance(hist, dict):
+        hist = {"timezone": "America/New_York", "days": []}
+    hist["timezone"] = "America/New_York"
+    days = [d for d in (hist.get("days") or []) if isinstance(d, dict) and d.get("date")]
+    if ranks and ranks.get("queries"):
+        point = snapshot_day(ranks, now)
+        days = [d for d in days if d.get("date") != point["date"]]
+        days.append(point)
+        days.sort(key=lambda d: d["date"])
+        hist["days"] = days
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(hist, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        print(f"wrote {path} ({len(days)} day(s))")
+    else:
+        hist["days"] = days
+    return hist
+
+
 def write_brief_md(path, generated_at_et, brief, updates, ranks):
     lines = [
         "# CUPI SEO",
@@ -453,6 +513,7 @@ def main():
         agents = []
     
     ranks = normalize_ranks(load_json(os.path.join(DOCS, "ranks.json"), None))
+    history = upsert_history(DOCS, ranks, now)
     
     brief = generate_brief(campaigns, ranks, now)
     updates = {
@@ -467,6 +528,7 @@ def main():
         "brief": brief,
         "updates": updates,
         "ranks": ranks,
+        "history": history,
         "campaigns": campaigns,
         "agents": agents,
         "refresh": "github-actions-every-30m",
