@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-21T18:55:21Z",
-  "generated_at_et": "Aug 21, 2026 · 2:55 PM EDT",
+  "generated_at_utc": "2026-08-21T19:27:43Z",
+  "generated_at_et": "Aug 21, 2026 · 3:27 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index. Wiki pull request #1 (Public landing is crawlable prose, not an empty sign-in shell) is open and not merged yet. Until that ships, the wiki stays invisible to search. Website pull request #2 (SEO ranking pass: CUPI Cornell /about-cupi page) is still open.",
   "updates": {
     "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 1d ago was: Add the team wiki to the Organization entity graph. Open pull request #2 — SEO ranking pass: CUPI Cornell /about-cupi page. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 21m ago was: The Formatting Guide is gone from the product. Open pull request #1 — Public landing is crawlable prose, not an empty sign-in shell. It is not in the top results for any tracked query."
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 11m ago was: Any member can file a bug as a pull request, screenshots included. Open pull request #1 — Public landing is crawlable prose, not an empty sign-in shell. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -261,10 +261,24 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Fri, 21 Aug 2026 18:34:07 GMT",
-      "bytes": 504780,
+      "last_modified": "Fri, 21 Aug 2026 19:25:58 GMT",
+      "bytes": 514268,
       "ok": true,
       "commits": [
+        {
+          "sha": "56013f3",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/56013f3128b8c4f6b3c8b09c08e7800bf66d31d0",
+          "message": "Any member can file a bug as a pull request, screenshots included",
+          "author": "Andre Boufama",
+          "date": "2026-08-21T19:16:15Z"
+        },
+        {
+          "sha": "7357b9b",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/7357b9bf8b678a46c60b2827b5e3ce9fd40793ae",
+          "message": "Headings with inline markup read clean in the TOC",
+          "author": "Andre Boufama",
+          "date": "2026-08-21T19:06:46Z"
+        },
         {
           "sha": "5e6f607",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/5e6f60750a32fc45d6b48a23522491e2595b1283",
@@ -292,20 +306,6 @@
           "message": "Add-members takes any pasted list",
           "author": "Andre Boufama",
           "date": "2026-08-21T17:47:04Z"
-        },
-        {
-          "sha": "d6a4ed8",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/d6a4ed8aea60eecf144aa36d1d46a9aa745bbd00",
-          "message": "Footer social anchors written literally so the SEO gate can see them",
-          "author": "Andre Boufama",
-          "date": "2026-08-21T17:35:52Z"
-        },
-        {
-          "sha": "8be4dff",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/8be4dff3a79efa6a007d6e0dc650d970db5d7169",
-          "message": "Landing card and footer are the team site's, element for element",
-          "author": "Andre Boufama",
-          "date": "2026-08-21T17:34:26Z"
         }
       ],
       "pulls": [
@@ -320,7 +320,7 @@
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 21, 2026 · 2:33 PM EDT"
+      "last_commit_et": "Aug 21, 2026 · 3:16 PM EDT"
     }
   },
   "agents": [
