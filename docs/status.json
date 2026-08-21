@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-21T21:15:52Z",
-  "generated_at_et": "Aug 21, 2026 · 5:15 PM EDT",
+  "generated_at_utc": "2026-08-21T21:26:33Z",
+  "generated_at_et": "Aug 21, 2026 · 5:26 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 1h ago was: Add site-wide social card, favicon.ico, and crawlable footer links (#3). No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 7m ago was: Redirect the Vercel host root, which /:path* does not match (#5). No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 6m ago was: Add embodied AI phrasing to about page and normalize CuPI casing in subteam copy (#4). No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 3m ago was: Add a second indexable public URL: /about (#6). No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,17 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI | Cornell Physical Intelligence at Cornell University",
-      "last_modified": "Fri, 21 Aug 2026 20:13:55 GMT",
+      "last_modified": "Fri, 21 Aug 2026 21:20:24 GMT",
       "bytes": 19221,
       "ok": true,
       "commits": [
+        {
+          "sha": "3bbc931",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/3bbc931517c998157c1876eac78f075ac86735ea",
+          "message": "Add embodied AI phrasing to about page and normalize CuPI casing in subteam copy (#4)",
+          "author": "aboufama",
+          "date": "2026-08-21T21:19:45Z"
+        },
         {
           "sha": "a37aa41",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/a37aa4176f810ecaba9fd464fd0758afa16fbd6e",
@@ -396,20 +403,13 @@
           "message": "Generate portrait sources without runtime parsing",
           "author": "Andre Boufama",
           "date": "2026-08-20T01:51:40Z"
-        },
-        {
-          "sha": "6b26624",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/6b26624ae7d80abe26f6d1ab7267cc4be7c46bbc",
-          "message": "Eliminate shared gallery and art image manifest",
-          "author": "Andre Boufama",
-          "date": "2026-08-20T01:48:04Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 21, 2026 · 4:13 PM EDT"
+      "last_commit_et": "Aug 21, 2026 · 5:19 PM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -421,10 +421,17 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Fri, 21 Aug 2026 21:13:56 GMT",
-      "bytes": 517396,
+      "last_modified": "Fri, 21 Aug 2026 21:23:40 GMT",
+      "bytes": 517494,
       "ok": true,
       "commits": [
+        {
+          "sha": "8aaf586",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/8aaf58664de6f45eb1109fca7055b7783ee23d61",
+          "message": "Add a second indexable public URL: /about (#6)",
+          "author": "aboufama",
+          "date": "2026-08-21T21:23:03Z"
+        },
         {
           "sha": "87f1d9b",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/87f1d9b70980d1cef8892906806c4cd50d9cc4b3",
@@ -459,20 +466,13 @@
           "message": "A logged-out fetch of the wiki is real prose, not an empty shell (#1)",
           "author": "aboufama",
           "date": "2026-08-21T19:38:21Z"
-        },
-        {
-          "sha": "56013f3",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/56013f3128b8c4f6b3c8b09c08e7800bf66d31d0",
-          "message": "Any member can file a bug as a pull request, screenshots included",
-          "author": "Andre Boufama",
-          "date": "2026-08-21T19:16:15Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 21, 2026 · 5:08 PM EDT"
+      "last_commit_et": "Aug 21, 2026 · 5:23 PM EDT"
     }
   },
   "agents": [
