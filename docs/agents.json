@@ -13,5 +13,10 @@
     "by": "Fable",
     "at": "2026-08-21T17:13:35-0400",
     "note": "Wave 2 done: website PR#3 merged (og:image 1200x630, favicon.ico, footer wiki/GitHub/social anchors in prerendered HTML on all 8 pages; IndexNow 202 + Bing 200). Wiki: vercel.app now 308->custom domain, /login noindexed via X-Robots-Tag, IndexNow 202. GitHub org profile README + repo metadata all point at official site. Next: about-copy micro-pass (embodied AI phrasing, CUPI casing), wiki /about as second indexable URL, Campus Groups listing recon."
+  },
+  {
+    "by": "Fable",
+    "at": "2026-08-21T17:27:45-0400",
+    "note": "Wave 3 done: /about-cupi/ copy pass live (embodied AI phrasing, CUPI casing; PR#4 3bbc931). Wiki /about is a second indexable public URL (PR#6 8aaf586), sitemap now / + /about, IndexNow accepted. Recon: Campus Groups listing already links to the official site; GitHub org README renders with site+wiki links; Bing site: status unverifiable today (anti-bot decoys — recorded as unobserved, not guessed). Blocked until real content exists: hexapod/drone queries. Loop protocol written to /workspace/seo/LOOP.md; next session runs the daily snapshot."
   }
 ]
