@@ -84,6 +84,21 @@ type Status = {
   campaigns?: { website?: Campaign; wiki?: Campaign }
 }
 
+type Tokens = {
+  generated_at?: string
+  generated_at_et?: string
+  model_orchestrator?: string
+  model_workers?: string
+  attempts?: number
+  prompt?: number
+  completion?: number
+  reasoning?: number
+  total?: number
+  last_job?: string | null
+  last_et?: string | null
+  source?: string
+}
+
 const STAIR_STEPS = [5, 4, 3, 2, 1] as const
 const STAIR_H: Record<(typeof STAIR_STEPS)[number], string> = {
   5: "h-1.5",
@@ -99,6 +114,10 @@ function statusUrl() {
 
 function historyUrl() {
   return `${import.meta.env.BASE_URL}history.json`
+}
+
+function tokensUrl() {
+  return `${import.meta.env.BASE_URL}tokens.json?t=${Date.now()}`
 }
 
 function shotUrl(src: string) {
@@ -152,6 +171,16 @@ function stairSorted(rows: RankQuery[]) {
 function pct(part: number, total: number) {
   if (!total) return 0
   return (part / total) * 100
+}
+
+function fmtCount(n: number | null | undefined) {
+  if (n == null || Number.isNaN(n)) return "—"
+  return n.toLocaleString("en-US")
+}
+
+function jobLabel(job?: string | null) {
+  if (!job) return null
+  return job.replace(/^\d+-/, "").replace(/-/g, " ")
 }
 
 function Stair({ rank }: { rank: number | null }) {
@@ -540,9 +569,70 @@ function ClimbCard({ history }: { history: History }) {
   )
 }
 
+function TokenCard({ tokens }: { tokens: Tokens }) {
+  const total = tokens.total ?? 0
+  const attempts = tokens.attempts ?? 0
+  const last = jobLabel(tokens.last_job)
+  return (
+    <section className="mt-10">
+      <Card className="gap-5 py-6">
+        <CardHeader className="px-5">
+          <CardTitle className="text-base font-medium">Ox Alpha</CardTitle>
+          <CardAction className="text-right text-xs text-muted-foreground">
+            <p>Fable orchestrator</p>
+            <p>Ox Alpha workers</p>
+          </CardAction>
+        </CardHeader>
+        <CardContent className="px-5">
+          <div className="flex flex-wrap items-end gap-x-5 gap-y-1">
+            <p className="text-[clamp(3.75rem,12vw,8rem)] font-medium leading-none tracking-tight tabular-nums">
+              {fmtCount(total)}
+            </p>
+            <p className="mb-2 text-2xl font-medium text-muted-foreground sm:mb-4 sm:text-3xl">
+              tokens
+            </p>
+          </div>
+          <div className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-4">
+            <div>
+              <p className="text-[clamp(1.5rem,3.5vw,2.25rem)] font-medium leading-none tabular-nums">
+                {fmtCount(attempts)}
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">attempts</p>
+            </div>
+            <div>
+              <p className="text-[clamp(1.5rem,3.5vw,2.25rem)] font-medium leading-none tabular-nums">
+                {fmtCount(tokens.prompt)}
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">prompt</p>
+            </div>
+            <div>
+              <p className="text-[clamp(1.5rem,3.5vw,2.25rem)] font-medium leading-none tabular-nums">
+                {fmtCount(tokens.completion)}
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">completion</p>
+            </div>
+            <div>
+              <p className="text-[clamp(1.5rem,3.5vw,2.25rem)] font-medium leading-none tabular-nums">
+                {fmtCount(tokens.reasoning)}
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">reasoning</p>
+            </div>
+          </div>
+          <p className="mt-6 text-[15px] text-muted-foreground">
+            {last ? `${last}` : "no finished job yet"}
+            {tokens.last_et ? ` · ${tokens.last_et}` : ""}
+            {tokens.generated_at_et ? ` · updated ${tokens.generated_at_et}` : ""}
+          </p>
+        </CardContent>
+      </Card>
+    </section>
+  )
+}
+
 export default function App() {
   const [data, setData] = useState<Status | null>(null)
   const [history, setHistory] = useState<History | null>(null)
+  const [tokens, setTokens] = useState<Tokens | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
@@ -571,6 +661,25 @@ export default function App() {
       .catch(() => {
         /* hide the graph rather than invent points */
       })
+  }, [])
+
+  useEffect(() => {
+    const load = () => {
+      fetch(tokensUrl(), { cache: "no-store" })
+        .then((res) => {
+          if (!res.ok) throw new Error(`tokens.json ${res.status}`)
+          return res.json()
+        })
+        .then((json: Tokens) => {
+          if (json && typeof json === "object") setTokens(json)
+        })
+        .catch(() => {
+          /* keep the last good count; never invent a number */
+        })
+    }
+    load()
+    const id = window.setInterval(load, 60_000)
+    return () => window.clearInterval(id)
   }, [])
 
   const ranks = data?.ranks
@@ -639,6 +748,8 @@ export default function App() {
           Goal is #1 on every string, climbed closest first.
         </p>
       </section>
+
+      {tokens ? <TokenCard tokens={tokens} /> : null}
 
       {history?.days?.length ? <ClimbCard history={history} /> : null}
 

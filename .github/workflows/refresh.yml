@@ -3,6 +3,7 @@ name: Refresh SEO board
 on:
   schedule:
     - cron: "*/30 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
   repository_dispatch:
     types: [seo-status-refresh]
@@ -17,14 +18,14 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: seo-status-refresh
-  cancel-in-progress: true
-
 jobs:
   refresh:
+    if: github.event_name != 'schedule' || github.event.schedule == '*/30 * * * *'
     runs-on: ubuntu-latest
     timeout-minutes: 12
+    concurrency:
+      group: seo-status-refresh
+      cancel-in-progress: true
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -48,10 +49,31 @@ jobs:
         run: |
           git config user.name "cupi-seo-status-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/status.json docs/brief.md docs/ranks.json docs/history.json docs/shots docs/agents.json || true
+          git add docs/status.json docs/brief.md docs/ranks.json docs/history.json docs/shots docs/agents.json docs/tokens.json || true
           if git diff --cached --quiet; then
             echo "no board change"
             exit 0
           fi
           git commit -m "Refresh SEO board $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
+
+  tokens:
+    if: github.event.schedule == '*/5 * * * *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    concurrency:
+      group: seo-status-tokens
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Republish tokens.json if it changed
+        run: |
+          git config user.name "cupi-seo-status-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/tokens.json || true
+          if git diff --cached --quiet; then
+            echo "no token change"
+            exit 0
+          fi
+          git commit -m "Refresh Ox Alpha tokens $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
