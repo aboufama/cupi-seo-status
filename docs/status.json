@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-21T20:52:04Z",
-  "generated_at_et": "Aug 21, 2026 · 4:52 PM EDT",
+  "generated_at_utc": "2026-08-21T21:15:52Z",
+  "generated_at_et": "Aug 21, 2026 · 5:15 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 38m ago was: Add site-wide social card, favicon.ico, and crawlable footer links (#3). No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 50m ago was: README: link live wiki and main site in first paragraph. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 1h ago was: Add site-wide social card, favicon.ico, and crawlable footer links (#3). No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 7m ago was: Redirect the Vercel host root, which /:path* does not match (#5). No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -421,10 +421,24 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Fri, 21 Aug 2026 20:50:45 GMT",
+      "last_modified": "Fri, 21 Aug 2026 21:13:56 GMT",
       "bytes": 517396,
       "ok": true,
       "commits": [
+        {
+          "sha": "87f1d9b",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/87f1d9b70980d1cef8892906806c4cd50d9cc4b3",
+          "message": "Redirect the Vercel host root, which /:path* does not match (#5)",
+          "author": "aboufama",
+          "date": "2026-08-21T21:08:40Z"
+        },
+        {
+          "sha": "a312ecd",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/a312ecd0266a8434f607ea816e46a4c433dc6c20",
+          "message": "Use an explicit 301 for the Vercel host redirect (#4)",
+          "author": "aboufama",
+          "date": "2026-08-21T21:05:55Z"
+        },
         {
           "sha": "88c5b44",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/88c5b44d43887d21c66a00ba12df3c4a4bd869c2",
@@ -452,27 +466,13 @@
           "message": "Any member can file a bug as a pull request, screenshots included",
           "author": "Andre Boufama",
           "date": "2026-08-21T19:16:15Z"
-        },
-        {
-          "sha": "7357b9b",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/7357b9bf8b678a46c60b2827b5e3ce9fd40793ae",
-          "message": "Headings with inline markup read clean in the TOC",
-          "author": "Andre Boufama",
-          "date": "2026-08-21T19:06:46Z"
-        },
-        {
-          "sha": "5e6f607",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/5e6f60750a32fc45d6b48a23522491e2595b1283",
-          "message": "The Formatting Guide is gone from the product",
-          "author": "Andre Boufama",
-          "date": "2026-08-21T18:33:45Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 21, 2026 · 4:01 PM EDT"
+      "last_commit_et": "Aug 21, 2026 · 5:08 PM EDT"
     }
   },
   "agents": [
@@ -485,6 +485,11 @@
       "by": "Fable",
       "at": "2026-08-21T15:56:37-0400",
       "note": "Wave 1 done via Ox Alpha workers: website PR#2 merged (7333f54, /about-cupi/ live, 8-URL sitemap) and wiki PR#1 conflict-resolved + merged (6839c56, crawlable landing live, entity JSON-LD intact, repo homepage fixed). Independent Bing pass: neither domain indexed on Bing (see ranks.json bing_snapshot; baseline queries[] untouched). Wave 2 dispatched: website og:image/favicon.ico/server-rendered footer + IndexNow; wiki noindex-login/vercel-redirect + IndexNow; GitHub org cross-link pass."
+    },
+    {
+      "by": "Fable",
+      "at": "2026-08-21T17:13:35-0400",
+      "note": "Wave 2 done: website PR#3 merged (og:image 1200x630, favicon.ico, footer wiki/GitHub/social anchors in prerendered HTML on all 8 pages; IndexNow 202 + Bing 200). Wiki: vercel.app now 308->custom domain, /login noindexed via X-Robots-Tag, IndexNow 202. GitHub org profile README + repo metadata all point at official site. Next: about-copy micro-pass (embodied AI phrasing, CUPI casing), wiki /about as second indexable URL, Campus Groups listing recon."
     }
   ],
   "refresh": "github-actions-every-30m"
