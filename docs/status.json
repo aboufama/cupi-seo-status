@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-08-23T19:01:10Z",
-  "generated_at_et": "Aug 23, 2026 · 3:01 PM EDT",
+  "generated_at_utc": "2026-08-23T19:30:13Z",
+  "generated_at_et": "Aug 23, 2026 · 3:30 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 1d ago was: Add /faq/ page with FAQPage schema, sitemap entry, and nav/footer links (#5). No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 8m ago was: Align CUPI organization contact signals. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
     "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1h ago was: The mirror works both ways: a preview selection finds its markdown. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
@@ -358,10 +358,17 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI | Cornell Physical Intelligence at Cornell University",
-      "last_modified": "Sat, 22 Aug 2026 16:23:00 GMT",
-      "bytes": 19255,
+      "last_modified": "Sun, 23 Aug 2026 19:22:42 GMT",
+      "bytes": 19406,
       "ok": true,
       "commits": [
+        {
+          "sha": "453bdd2",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/453bdd23acb1176ccc23abf6bf918ec136907b5e",
+          "message": "Align CUPI organization contact signals",
+          "author": "Andre Boufama",
+          "date": "2026-08-23T19:21:59Z"
+        },
         {
           "sha": "fe5b3c8",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/fe5b3c8f3a9a213a0bfaa96bac451be12de7247f",
@@ -396,20 +403,13 @@
           "message": "Add the team wiki to the Organization entity graph",
           "author": "Andre Boufama",
           "date": "2026-08-20T05:06:52Z"
-        },
-        {
-          "sha": "f792e88",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/f792e8896a03043de39ab528b2e6fdb676753fe4",
-          "message": "Restore the squircle tab favicon without re-exposing it to crawlers",
-          "author": "Andre Boufama",
-          "date": "2026-08-20T04:11:30Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 22, 2026 · 12:22 PM EDT"
+      "last_commit_et": "Aug 23, 2026 · 3:21 PM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -421,7 +421,7 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Sun, 23 Aug 2026 18:59:48 GMT",
+      "last_modified": "Sun, 23 Aug 2026 17:38:37 GMT",
       "bytes": 527533,
       "ok": true,
       "commits": [
