@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-23T20:24:33Z",
-  "generated_at_et": "Aug 23, 2026 · 4:24 PM EDT",
+  "generated_at_utc": "2026-08-23T20:51:03Z",
+  "generated_at_et": "Aug 23, 2026 · 4:51 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 5m ago was: Restore original CUPI site presentation. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 2h ago was: The mirror works both ways: a preview selection finds its markdown. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 10m ago was: Use supplied CU GeoData emblem. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 3h ago was: The mirror works both ways: a preview selection finds its markdown. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,38 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI | Cornell Physical Intelligence at Cornell University",
-      "last_modified": "Sun, 23 Aug 2026 20:19:44 GMT",
+      "last_modified": "Sun, 23 Aug 2026 20:41:04 GMT",
       "bytes": 19374,
       "ok": true,
       "commits": [
+        {
+          "sha": "390fd85",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/390fd854ac1539d84a6d4b0d2b561f94028255ae",
+          "message": "Use supplied CU GeoData emblem",
+          "author": "Andre Boufama",
+          "date": "2026-08-23T20:40:21Z"
+        },
+        {
+          "sha": "fd0fbad",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/fd0fbadf1e0cded406cb8202bfb21464c08e70cf",
+          "message": "Bust cache for Picogrid wordmark",
+          "author": "Andre Boufama",
+          "date": "2026-08-23T20:36:02Z"
+        },
+        {
+          "sha": "6c3c0a1",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/6c3c0a1f7ba316cb241f43f13e362418de8b8033",
+          "message": "Refine Picogrid sponsor wordmark",
+          "author": "Andre Boufama",
+          "date": "2026-08-23T20:33:51Z"
+        },
+        {
+          "sha": "c03c844",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/c03c844c301bbeb5348f85f7adfe2251a778130d",
+          "message": "Add Picogrid as a gold sponsor",
+          "author": "Andre Boufama",
+          "date": "2026-08-23T20:29:25Z"
+        },
         {
           "sha": "42f45c8",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/42f45c81d7d668468b4fcd2f862744118f34a478",
@@ -375,41 +403,13 @@
           "message": "Mark CUPI profiles as identity links",
           "author": "Andre Boufama",
           "date": "2026-08-23T20:02:11Z"
-        },
-        {
-          "sha": "87d4112",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/87d411289ace2c92b903066ee5cbd01d3640797e",
-          "message": "Validate CUPI report publication dates",
-          "author": "Andre Boufama",
-          "date": "2026-08-23T19:31:41Z"
-        },
-        {
-          "sha": "453bdd2",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/453bdd23acb1176ccc23abf6bf918ec136907b5e",
-          "message": "Align CUPI organization contact signals",
-          "author": "Andre Boufama",
-          "date": "2026-08-23T19:21:59Z"
-        },
-        {
-          "sha": "fe5b3c8",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/fe5b3c8f3a9a213a0bfaa96bac451be12de7247f",
-          "message": "Add /faq/ page with FAQPage schema, sitemap entry, and nav/footer links (#5)",
-          "author": "aboufama",
-          "date": "2026-08-22T16:22:15Z"
-        },
-        {
-          "sha": "3bbc931",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/3bbc931517c998157c1876eac78f075ac86735ea",
-          "message": "Add embodied AI phrasing to about page and normalize CuPI casing in subteam copy (#4)",
-          "author": "aboufama",
-          "date": "2026-08-21T21:19:45Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 23, 2026 · 4:19 PM EDT"
+      "last_commit_et": "Aug 23, 2026 · 4:40 PM EDT"
     },
     "wiki": {
       "id": "wiki",
