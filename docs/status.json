@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-23T19:30:13Z",
-  "generated_at_et": "Aug 23, 2026 · 3:30 PM EDT",
+  "generated_at_utc": "2026-08-23T19:49:59Z",
+  "generated_at_et": "Aug 23, 2026 · 3:49 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 8m ago was: Align CUPI organization contact signals. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1h ago was: The mirror works both ways: a preview selection finds its markdown. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 18m ago was: Validate CUPI report publication dates. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 2h ago was: The mirror works both ways: a preview selection finds its markdown. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,17 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI | Cornell Physical Intelligence at Cornell University",
-      "last_modified": "Sun, 23 Aug 2026 19:22:42 GMT",
+      "last_modified": "Sun, 23 Aug 2026 19:32:18 GMT",
       "bytes": 19406,
       "ok": true,
       "commits": [
+        {
+          "sha": "87d4112",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/87d411289ace2c92b903066ee5cbd01d3640797e",
+          "message": "Validate CUPI report publication dates",
+          "author": "Andre Boufama",
+          "date": "2026-08-23T19:31:41Z"
+        },
         {
           "sha": "453bdd2",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/453bdd23acb1176ccc23abf6bf918ec136907b5e",
@@ -396,20 +403,13 @@
           "message": "Add /about-cupi ranking page for CUPI Cornell and Cornell CUPI (#2)",
           "author": "aboufama",
           "date": "2026-08-21T19:36:44Z"
-        },
-        {
-          "sha": "f3dfd45",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/f3dfd45da4969393896bf2b1d34ce332f9edd204",
-          "message": "Add the team wiki to the Organization entity graph",
-          "author": "Andre Boufama",
-          "date": "2026-08-20T05:06:52Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 23, 2026 · 3:21 PM EDT"
+      "last_commit_et": "Aug 23, 2026 · 3:31 PM EDT"
     },
     "wiki": {
       "id": "wiki",
