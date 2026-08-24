@@ -1,6 +1,6 @@
 # CUPI SEO
 
-Last check: Aug 24, 2026 · 9:53 AM EDT
+Last check: Aug 24, 2026 · 10:44 AM EDT
 
 The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.
 
@@ -32,7 +32,7 @@ Average position for cornellphysicalintelligence.com: 2.5
 | Cornell embodied AI club | not in top results | not in top results | Campus Groups | Official site missed. CEI lab 2, CAM 3. |
 
 Website
-Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 8m ago was: Use CU GeoData wordmark logo. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.
+Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 59m ago was: Use CU GeoData wordmark logo. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.
 
 Wiki
-Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 16h ago was: Remove visible SEO copy from wiki. No open pull requests. It is not in the top results for any tracked query.
+Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 17h ago was: Remove visible SEO copy from wiki. No open pull requests. It is not in the top results for any tracked query.
