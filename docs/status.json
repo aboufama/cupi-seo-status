@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-08-26T12:53:26Z",
-  "generated_at_et": "Aug 26, 2026 · 8:53 AM EDT",
+  "generated_at_utc": "2026-08-26T13:55:45Z",
+  "generated_at_et": "Aug 26, 2026 · 9:55 AM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 1d ago was: Add Onshape to silver sponsors. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 36m ago was: Correct sponsors page modification date. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
     "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1d ago was: Every heading click answers, and the info button stops nudging the page. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
@@ -358,10 +358,17 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI | Cornell Physical Intelligence at Cornell University",
-      "last_modified": "Mon, 24 Aug 2026 18:56:28 GMT",
+      "last_modified": "Wed, 26 Aug 2026 13:20:27 GMT",
       "bytes": 19374,
       "ok": true,
       "commits": [
+        {
+          "sha": "6ebd240",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/6ebd24026449d3f326536ca8071906df00463515",
+          "message": "Correct sponsors page modification date",
+          "author": "Andre Boufama",
+          "date": "2026-08-26T13:19:43Z"
+        },
         {
           "sha": "9cc1547",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/9cc1547a73c1232827027dd4ca6dda2e11021e55",
@@ -396,20 +403,13 @@
           "message": "Refine Picogrid sponsor wordmark",
           "author": "Andre Boufama",
           "date": "2026-08-23T20:33:51Z"
-        },
-        {
-          "sha": "c03c844",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/c03c844c301bbeb5348f85f7adfe2251a778130d",
-          "message": "Add Picogrid as a gold sponsor",
-          "author": "Andre Boufama",
-          "date": "2026-08-23T20:29:25Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 24, 2026 · 2:53 PM EDT"
+      "last_commit_et": "Aug 26, 2026 · 9:19 AM EDT"
     },
     "wiki": {
       "id": "wiki",
