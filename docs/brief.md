@@ -1,6 +1,6 @@
 # CUPI SEO
 
-Last check: Aug 25, 2026 · 7:54 PM EDT
+Last check: Aug 25, 2026 · 9:19 PM EDT
 
 The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.
 
