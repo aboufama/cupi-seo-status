@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-28T05:08:51Z",
-  "generated_at_et": "Aug 28, 2026 · 1:08 AM EDT",
+  "generated_at_utc": "2026-08-28T17:38:27Z",
+  "generated_at_et": "Aug 28, 2026 · 1:38 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 1d ago was: Correct sponsors page modification date. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 3d ago was: Every heading click answers, and the info button stops nudging the page. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 11h ago was: The crawlable fallback can no longer reach a visitor's screen. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1h ago was: Shared wiki links preview as the club's card. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,58 +358,58 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI | Cornell Physical Intelligence at Cornell University",
-      "last_modified": "Wed, 26 Aug 2026 13:20:27 GMT",
-      "bytes": 19374,
+      "last_modified": "Fri, 28 Aug 2026 06:25:29 GMT",
+      "bytes": 18506,
       "ok": true,
       "commits": [
         {
-          "sha": "6ebd240",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/6ebd24026449d3f326536ca8071906df00463515",
-          "message": "Correct sponsors page modification date",
+          "sha": "d1cb8ff",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/d1cb8ff431181ae4d55bd7422b60dd6f67e6bda5",
+          "message": "The crawlable fallback can no longer reach a visitor's screen",
           "author": "Andre Boufama",
-          "date": "2026-08-26T13:19:43Z"
+          "date": "2026-08-28T06:24:51Z"
         },
         {
-          "sha": "9cc1547",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/9cc1547a73c1232827027dd4ca6dda2e11021e55",
-          "message": "Add Onshape to silver sponsors",
+          "sha": "7640814",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/764081427c060d751000790771a19e2809f5e45b",
+          "message": "Link previews show the club's crab drawing",
           "author": "Andre Boufama",
-          "date": "2026-08-24T18:53:28Z"
+          "date": "2026-08-28T06:16:12Z"
         },
         {
-          "sha": "84c6f6c",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/84c6f6c18544bc5f7c4ffd4268bd250cd91958dd",
-          "message": "Use CU GeoData wordmark logo",
+          "sha": "77ce650",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/77ce650f9957596967d24f6028cefe8570fb6624",
+          "message": "Apply form asks before replacing an earlier submission",
           "author": "Andre Boufama",
-          "date": "2026-08-24T13:44:58Z"
+          "date": "2026-08-28T06:10:01Z"
         },
         {
-          "sha": "390fd85",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/390fd854ac1539d84a6d4b0d2b561f94028255ae",
-          "message": "Use supplied CU GeoData emblem",
+          "sha": "bd57036",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/bd5703667690419e8b399c453f7315d6dbc5650e",
+          "message": "Success keeps the page still: the button becomes the confirmation",
           "author": "Andre Boufama",
-          "date": "2026-08-23T20:40:21Z"
+          "date": "2026-08-28T05:17:48Z"
         },
         {
-          "sha": "fd0fbad",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/fd0fbadf1e0cded406cb8202bfb21464c08e70cf",
-          "message": "Bust cache for Picogrid wordmark",
+          "sha": "da934e5",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/da934e5831658ad8f01adac7f45607fb7061c267",
+          "message": "Apply page: open/closed toggle, crab retired to the closed page, calm hover",
           "author": "Andre Boufama",
-          "date": "2026-08-23T20:36:02Z"
+          "date": "2026-08-28T05:13:12Z"
         },
         {
-          "sha": "6c3c0a1",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/6c3c0a1f7ba316cb241f43f13e362418de8b8033",
-          "message": "Refine Picogrid sponsor wordmark",
+          "sha": "4bd1d43",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/4bd1d43b914ef78442dcae2b28609d10a6e37d73",
+          "message": "Attach affordance becomes a corner upload icon",
           "author": "Andre Boufama",
-          "date": "2026-08-23T20:33:51Z"
+          "date": "2026-08-28T05:06:38Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 26, 2026 · 9:19 AM EDT"
+      "last_commit_et": "Aug 28, 2026 · 2:24 AM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -421,58 +421,58 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Wed, 26 Aug 2026 02:47:22 GMT",
-      "bytes": 535575,
+      "last_modified": "Fri, 28 Aug 2026 16:40:50 GMT",
+      "bytes": 560447,
       "ok": true,
       "commits": [
         {
-          "sha": "d92adfd",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/d92adfdc19a30cdf5317d3cca88164ef3bdaa06a",
-          "message": "Every heading click answers, and the info button stops nudging the page",
+          "sha": "fcfc66f",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/fcfc66f47158c44c32bb72f3f3ad454d95594feb",
+          "message": "Shared wiki links preview as the club's card",
           "author": "Andre Boufama",
-          "date": "2026-08-24T20:31:04Z"
+          "date": "2026-08-28T16:31:22Z"
         },
         {
-          "sha": "a285e44",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/a285e44df0991569fb7a7b9428e838a3d4780a49",
-          "message": "Heading links scroll smoothly to the right place",
+          "sha": "3217fae",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/3217fae178116de5a114970e3e638dc25c0ca094",
+          "message": "Drop comments from the interest list; ask before replacing a submission",
           "author": "Andre Boufama",
-          "date": "2026-08-24T20:23:33Z"
+          "date": "2026-08-28T06:09:49Z"
         },
         {
-          "sha": "fb65660",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/fb6566060065621ae1058d1984ba7d580b2464d3",
-          "message": "URDF files get a robot viewer, and every model card gets Download",
+          "sha": "d8123cc",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/d8123ccb0b9a0d3a3008662b52b3b0bfd103963a",
+          "message": "Interest list: one aligned sheet component",
           "author": "Andre Boufama",
-          "date": "2026-08-24T15:49:26Z"
+          "date": "2026-08-28T05:59:09Z"
         },
         {
-          "sha": "dab6eec",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/dab6eecdabc12aa0452b26d749bb483dcc218d2f",
-          "message": "Remove visible SEO copy from wiki",
+          "sha": "fd93fea",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/fd93fea0d93dd7a99ac92dbd8ce47b52431f568d",
+          "message": "Interest list: comments, sorting, archives, and a sheet that never spills",
           "author": "Andre Boufama",
-          "date": "2026-08-23T20:56:58Z"
+          "date": "2026-08-28T05:44:23Z"
         },
         {
-          "sha": "5012f0e",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/5012f0e223648fbb4ab2ca2a12bae7a8bc2c2a91",
-          "message": "The mirror works both ways: a preview selection finds its markdown",
+          "sha": "c9e594f",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/c9e594fa83a7d36a1a14c98769f9720ce23c29b4",
+          "message": "Interest list: flags with notes, ordered sheet, guarded clear",
           "author": "Andre Boufama",
-          "date": "2026-08-23T17:38:25Z"
+          "date": "2026-08-28T05:27:04Z"
         },
         {
-          "sha": "f258538",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/f2585387eccdba61dd5c3af37e95c138f8dfd8ee",
-          "message": "Editing gets its own URL; the mirror calms down; spell check gets a switch",
+          "sha": "676e0bc",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/676e0bc0a088d8958f7e55e4d9849ac368cc1b42",
+          "message": "Interest list becomes a mounted component instead of a core feature",
           "author": "Andre Boufama",
-          "date": "2026-08-22T19:09:17Z"
+          "date": "2026-08-28T03:02:06Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 24, 2026 · 4:31 PM EDT"
+      "last_commit_et": "Aug 28, 2026 · 12:31 PM EDT"
     }
   },
   "agents": [
