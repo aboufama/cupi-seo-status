@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-01T00:45:09Z",
-  "generated_at_et": "Aug 31, 2026 · 8:45 PM EDT",
+  "generated_at_utc": "2026-09-01T06:05:02Z",
+  "generated_at_et": "Sep 1, 2026 · 2:05 AM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
@@ -421,7 +421,7 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Mon, 31 Aug 2026 18:19:32 GMT",
+      "last_modified": "Sat, 29 Aug 2026 01:29:21 GMT",
       "bytes": 560447,
       "ok": true,
       "commits": [
