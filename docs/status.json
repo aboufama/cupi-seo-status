@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-09-04T01:12:29Z",
-  "generated_at_et": "Sep 3, 2026 · 9:12 PM EDT",
+  "generated_at_utc": "2026-09-04T06:20:00Z",
+  "generated_at_et": "Sep 4, 2026 · 2:20 AM EDT",
   "timezone": "America/New_York",
-  "brief": "The official site is live (HTTP 200) and serving “CUPI | Cornell Physical Intelligence at Cornell University.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
+  "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI | Cornell Physical Intelligence at Cornell University.” The latest change 6d ago was: The crawlable fallback can no longer reach a visitor's screen. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 4h ago was: Lead homepage metadata with CUPI Cornell. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
     "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 6d ago was: Shared wiki links preview as the club's card. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
@@ -357,11 +357,25 @@
       "screenshot": "shots/website.png",
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
-      "title": "CUPI | Cornell Physical Intelligence at Cornell University",
-      "last_modified": "Fri, 28 Aug 2026 06:25:29 GMT",
-      "bytes": 18506,
+      "title": "CUPI Cornell | Cornell Physical Intelligence",
+      "last_modified": "Fri, 04 Sep 2026 01:39:45 GMT",
+      "bytes": 18981,
       "ok": true,
       "commits": [
+        {
+          "sha": "b6af757",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/b6af757c1e03cd653ff6ce04cdda047397e83e7b",
+          "message": "Lead homepage metadata with CUPI Cornell",
+          "author": "Andre Boufama",
+          "date": "2026-09-04T01:38:56Z"
+        },
+        {
+          "sha": "03dcb69",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/03dcb699a6de28452b478dfddb94861765584210",
+          "message": "Reinforce CUPI entity links for search",
+          "author": "Andre Boufama",
+          "date": "2026-09-04T01:34:03Z"
+        },
         {
           "sha": "d1cb8ff",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/d1cb8ff431181ae4d55bd7422b60dd6f67e6bda5",
@@ -389,27 +403,13 @@
           "message": "Success keeps the page still: the button becomes the confirmation",
           "author": "Andre Boufama",
           "date": "2026-08-28T05:17:48Z"
-        },
-        {
-          "sha": "da934e5",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/da934e5831658ad8f01adac7f45607fb7061c267",
-          "message": "Apply page: open/closed toggle, crab retired to the closed page, calm hover",
-          "author": "Andre Boufama",
-          "date": "2026-08-28T05:13:12Z"
-        },
-        {
-          "sha": "4bd1d43",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/4bd1d43b914ef78442dcae2b28609d10a6e37d73",
-          "message": "Attach affordance becomes a corner upload icon",
-          "author": "Andre Boufama",
-          "date": "2026-08-28T05:06:38Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Aug 28, 2026 · 2:24 AM EDT"
+      "last_commit_et": "Sep 3, 2026 · 9:38 PM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -421,7 +421,7 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Wed, 02 Sep 2026 08:03:41 GMT",
+      "last_modified": "Wed, 02 Sep 2026 03:29:59 GMT",
       "bytes": 560447,
       "ok": true,
       "commits": [
