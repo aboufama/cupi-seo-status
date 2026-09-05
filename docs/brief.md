@@ -1,6 +1,6 @@
 # CUPI SEO
 
-Last check: Sep 5, 2026 · 9:42 AM EDT
+Last check: Sep 5, 2026 · 12:35 PM EDT
 
 The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.
 
@@ -35,4 +35,4 @@ Website
 Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 1d ago was: Lead homepage metadata with CUPI Cornell. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.
 
 Wiki
-Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 7d ago was: Shared wiki links preview as the club's card. No open pull requests. It is not in the top results for any tracked query.
+Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 8d ago was: Shared wiki links preview as the club's card. No open pull requests. It is not in the top results for any tracked query.
