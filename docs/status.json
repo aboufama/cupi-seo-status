@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-09T14:30:42Z",
-  "generated_at_et": "Sep 9, 2026 · 10:30 AM EDT",
+  "generated_at_utc": "2026-09-09T17:55:22Z",
+  "generated_at_et": "Sep 9, 2026 · 1:55 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 17h ago was: Add Creative to interest form subteams. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 17h ago was: Add Creative subteam to wiki and intake. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 3m ago was: Remove required label from apply form. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 20h ago was: Add Creative subteam to wiki and intake. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,31 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Tue, 08 Sep 2026 21:18:21 GMT",
+      "last_modified": "Wed, 09 Sep 2026 17:53:08 GMT",
       "bytes": 18981,
       "ok": true,
       "commits": [
+        {
+          "sha": "053f1c1",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/053f1c145727008eadba523cd41b026f91620451",
+          "message": "Remove required label from apply form",
+          "author": "Andre Boufama",
+          "date": "2026-09-09T17:52:17Z"
+        },
+        {
+          "sha": "20c331f",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/20c331f9532871756c318e86ffca2aa939cebd32",
+          "message": "Anchor apply dropdowns and suppress mobile overscroll",
+          "author": "Andre Boufama",
+          "date": "2026-09-09T17:49:48Z"
+        },
+        {
+          "sha": "821aabf",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/821aabfce7c6bc4862dd4b707925690b090cc41d",
+          "message": "Fix mobile apply dropdown scrolling and touch targets",
+          "author": "Andre Boufama",
+          "date": "2026-09-09T17:41:20Z"
+        },
         {
           "sha": "7e7456c",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/7e7456c0733fd61a35acae67c219a5886e0e46bf",
@@ -382,34 +403,13 @@
           "message": "Add optional academic year to the interest form",
           "author": "Andre Boufama",
           "date": "2026-09-08T13:08:10Z"
-        },
-        {
-          "sha": "b6af757",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/b6af757c1e03cd653ff6ce04cdda047397e83e7b",
-          "message": "Lead homepage metadata with CUPI Cornell",
-          "author": "Andre Boufama",
-          "date": "2026-09-04T01:38:56Z"
-        },
-        {
-          "sha": "03dcb69",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/03dcb699a6de28452b478dfddb94861765584210",
-          "message": "Reinforce CUPI entity links for search",
-          "author": "Andre Boufama",
-          "date": "2026-09-04T01:34:03Z"
-        },
-        {
-          "sha": "d1cb8ff",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/d1cb8ff431181ae4d55bd7422b60dd6f67e6bda5",
-          "message": "The crawlable fallback can no longer reach a visitor's screen",
-          "author": "Andre Boufama",
-          "date": "2026-08-28T06:24:51Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 8, 2026 · 5:17 PM EDT"
+      "last_commit_et": "Sep 9, 2026 · 1:52 PM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -421,7 +421,7 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Tue, 08 Sep 2026 21:59:47 GMT",
+      "last_modified": "Wed, 09 Sep 2026 02:48:19 GMT",
       "bytes": 611845,
       "ok": true,
       "commits": [
