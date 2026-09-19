@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-19T16:17:41Z",
-  "generated_at_et": "Sep 19, 2026 · 12:17 PM EDT",
+  "generated_at_utc": "2026-09-19T18:44:19Z",
+  "generated_at_et": "Sep 19, 2026 · 2:44 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 3d ago was: Check application recovery on every change. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 3d ago was: Isolate personal settings and improve Interest layout and upload recovery. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 4d ago was: Check application recovery on every change. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 13m ago was: Prompt for sign-in when a session ends, renew sessions on use, and box the integrations. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -421,58 +421,58 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Sat, 19 Sep 2026 08:53:02 GMT",
-      "bytes": 749066,
+      "last_modified": "Sat, 19 Sep 2026 18:43:04 GMT",
+      "bytes": 741960,
       "ok": true,
       "commits": [
+        {
+          "sha": "fb4a8f0",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/fb4a8f08dbb16fa071fa3a753182f04440511f7c",
+          "message": "Prompt for sign-in when a session ends, renew sessions on use, and box the integrations",
+          "author": "Andre Boufama",
+          "date": "2026-09-19T18:30:31Z"
+        },
+        {
+          "sha": "ec3d82f",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/ec3d82f17b78742476b2a3a4b324a57a233f4f1c",
+          "message": "Rename Interest to Applications and move wiki tools into a Settings menu",
+          "author": "Andre Boufama",
+          "date": "2026-09-19T18:08:53Z"
+        },
+        {
+          "sha": "fdfce29",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/fdfce2913edce859189023d2f59a3e1bb129bd26",
+          "message": "Remove the section folder page",
+          "author": "Andre Boufama",
+          "date": "2026-09-19T18:01:06Z"
+        },
+        {
+          "sha": "3217486",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/3217486c5106e6542ec524121c9dd4421f56f0a8",
+          "message": "Keep the boot mark in place and set the sidebar \"Wiki\" in the display serif",
+          "author": "Andre Boufama",
+          "date": "2026-09-19T17:52:57Z"
+        },
+        {
+          "sha": "75320ae",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/75320aec258ef66d9af67f2c2c8f230090804497",
+          "message": "Adopt the four-circle CUPI mark and ship pending assistance work",
+          "author": "Andre Boufama",
+          "date": "2026-09-19T17:51:41Z"
+        },
         {
           "sha": "c96dc4d",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/c96dc4de3cf2ef3afea711718f510f0da64602f3",
           "message": "Isolate personal settings and improve Interest layout and upload recovery",
           "author": "Andre Boufama",
           "date": "2026-09-15T19:37:48Z"
-        },
-        {
-          "sha": "a25d5d2",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/a25d5d2fd635b043bca5d025ef162919af5f2659",
-          "message": "Let footer actions fill the sidebar evenly",
-          "author": "Andre Boufama",
-          "date": "2026-09-15T19:15:30Z"
-        },
-        {
-          "sha": "da26f35",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/da26f355a8a8437a458f5ea05c8367a2e0101f33",
-          "message": "Guard intake recovery and transfer savings in CI",
-          "author": "Andre Boufama",
-          "date": "2026-09-15T18:30:31Z"
-        },
-        {
-          "sha": "1ad691e",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/1ad691e488350d0b51534ba84130472144774deb",
-          "message": "Fix desktop overflow and keyboard navigation across the wiki",
-          "author": "Andre Boufama",
-          "date": "2026-09-15T18:29:32Z"
-        },
-        {
-          "sha": "0a68bc3",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/0a68bc32085552d60e9a98fc69ac9cb7c1601b46",
-          "message": "Preserve intake through database outages and reduce idle wiki work",
-          "author": "Andre Boufama",
-          "date": "2026-09-15T18:17:51Z"
-        },
-        {
-          "sha": "129bd7d",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/129bd7d4f8aa900f7faac39bfac87cda4452c4fd",
-          "message": "Compress database snapshots without losing legacy compatibility",
-          "author": "Andre Boufama",
-          "date": "2026-09-15T17:53:05Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 15, 2026 · 3:37 PM EDT"
+      "last_commit_et": "Sep 19, 2026 · 2:30 PM EDT"
     }
   },
   "agents": [
