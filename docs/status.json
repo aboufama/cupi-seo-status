@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-20T16:24:20Z",
-  "generated_at_et": "Sep 20, 2026 · 12:24 PM EDT",
+  "generated_at_utc": "2026-09-20T18:59:11Z",
+  "generated_at_et": "Sep 20, 2026 · 2:59 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 4d ago was: Check application recovery on every change. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 5h ago was: Add the modular recruitment system behind Applications. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change just now was: Give every form its own page under /apply/. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change just now was: Link each form to its own page on the club site. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,31 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Tue, 15 Sep 2026 18:31:15 GMT",
+      "last_modified": "Sun, 20 Sep 2026 17:38:58 GMT",
       "bytes": 18981,
       "ok": true,
       "commits": [
+        {
+          "sha": "fed6fd1",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/fed6fd1ed4f94a1d9581c6f89ffcfac0f696a155",
+          "message": "Give every form its own page under /apply/",
+          "author": "Andre Boufama",
+          "date": "2026-09-20T18:58:34Z"
+        },
+        {
+          "sha": "ee5885a",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/ee5885a52147904a9ab7fa8cc3000e2484fd96a0",
+          "message": "Test the Apply page against the wiki-driven forms",
+          "author": "Andre Boufama",
+          "date": "2026-09-20T17:38:21Z"
+        },
+        {
+          "sha": "a56e6eb",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/a56e6eb13a2281086de39d58b00d60c1c6b3e5d5",
+          "message": "Draw the Apply page from the wiki's published forms",
+          "author": "Andre Boufama",
+          "date": "2026-09-20T17:28:50Z"
+        },
         {
           "sha": "6b3464d",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/6b3464d51715b164a4457de8ecaa661944603271",
@@ -382,34 +403,13 @@
           "message": "Remove required label from apply form",
           "author": "Andre Boufama",
           "date": "2026-09-09T17:52:17Z"
-        },
-        {
-          "sha": "20c331f",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/20c331f9532871756c318e86ffca2aa939cebd32",
-          "message": "Anchor apply dropdowns and suppress mobile overscroll",
-          "author": "Andre Boufama",
-          "date": "2026-09-09T17:49:48Z"
-        },
-        {
-          "sha": "821aabf",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/821aabfce7c6bc4862dd4b707925690b090cc41d",
-          "message": "Fix mobile apply dropdown scrolling and touch targets",
-          "author": "Andre Boufama",
-          "date": "2026-09-09T17:41:20Z"
-        },
-        {
-          "sha": "7e7456c",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/7e7456c0733fd61a35acae67c219a5886e0e46bf",
-          "message": "Add Creative to interest form subteams",
-          "author": "Andre Boufama",
-          "date": "2026-09-08T21:17:38Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 15, 2026 · 2:30 PM EDT"
+      "last_commit_et": "Sep 20, 2026 · 2:58 PM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -421,58 +421,58 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Sun, 20 Sep 2026 12:02:51 GMT",
-      "bytes": 1022782,
+      "last_modified": "Sun, 20 Sep 2026 18:58:59 GMT",
+      "bytes": 841367,
       "ok": true,
       "commits": [
+        {
+          "sha": "f30ac58",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/f30ac58df9829c871af237d33e92ded95dfc5513",
+          "message": "Link each form to its own page on the club site",
+          "author": "Andre Boufama",
+          "date": "2026-09-20T18:58:01Z"
+        },
+        {
+          "sha": "9c1ada3",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/9c1ada30ad8bfbe3ee438a2e145759e8ac42b07f",
+          "message": "Open and close the person dialog in place, keep its controls concentric",
+          "author": "Andre Boufama",
+          "date": "2026-09-20T18:33:30Z"
+        },
+        {
+          "sha": "b55a2d8",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/b55a2d84c5b4867da042cb2996846eca82bdb486",
+          "message": "Edit each form on its own tab, step through applications in place",
+          "author": "Andre Boufama",
+          "date": "2026-09-20T18:23:50Z"
+        },
+        {
+          "sha": "4f8fb78",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/4f8fb7812d773c9d71377165379a3323a6c2e63b",
+          "message": "Read a cycle imported as \"Interest list / Rolling\" by its term",
+          "author": "Andre Boufama",
+          "date": "2026-09-20T17:30:30Z"
+        },
+        {
+          "sha": "d9381f3",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/d9381f386d0c91d99b71ad8e5458d3a8e170f8be",
+          "message": "Cut recruitment to cycles with three website sections",
+          "author": "Andre Boufama",
+          "date": "2026-09-20T17:28:48Z"
+        },
         {
           "sha": "93834de",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/93834de6087f5e84eae588c9fc691fc319a6b4a1",
           "message": "Add the modular recruitment system behind Applications",
           "author": "Andre Boufama",
           "date": "2026-09-20T10:25:38Z"
-        },
-        {
-          "sha": "2777052",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/27770523c0a476eccc7560ef9e8fe1521fb00e45",
-          "message": "Reject prototype op names and stop attachments executing on the wiki origin",
-          "author": "Andre Boufama",
-          "date": "2026-09-20T04:49:06Z"
-        },
-        {
-          "sha": "3abe22a",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/3abe22a438035caeccf74af42d2a6d819fb083bf",
-          "message": "Keep the sign-in control still when pressed",
-          "author": "Andre Boufama",
-          "date": "2026-09-19T23:52:45Z"
-        },
-        {
-          "sha": "3f4fe5a",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/3f4fe5a271fda5cba4d01b5e99ef4a9235ea1d0e",
-          "message": "Cut the signed-out page down to the frame, the folders, and one control",
-          "author": "Andre Boufama",
-          "date": "2026-09-19T23:49:00Z"
-        },
-        {
-          "sha": "f9ac767",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/f9ac767aca94c5a544fec0c0210545b75efd8279",
-          "message": "Credit people by name, open the editor split, and move Export to Settings",
-          "author": "Andre Boufama",
-          "date": "2026-09-19T23:40:51Z"
-        },
-        {
-          "sha": "5bbd270",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/5bbd27065b73bd6e706b9e7bb8af8236fc428ae4",
-          "message": "Rebuild the signed-out page as the wiki frame with members-only parts locked",
-          "author": "Andre Boufama",
-          "date": "2026-09-19T23:38:29Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 20, 2026 · 6:25 AM EDT"
+      "last_commit_et": "Sep 20, 2026 · 2:58 PM EDT"
     }
   },
   "agents": [
