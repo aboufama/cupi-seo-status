@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-20T06:44:24Z",
-  "generated_at_et": "Sep 20, 2026 · 2:44 AM EDT",
+  "generated_at_utc": "2026-09-20T12:04:17Z",
+  "generated_at_et": "Sep 20, 2026 · 8:04 AM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
     "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 4d ago was: Check application recovery on every change. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1h ago was: Reject prototype op names and stop attachments executing on the wiki origin. No open pull requests. It is not in the top results for any tracked query."
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1h ago was: Add the modular recruitment system behind Applications. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -421,10 +421,17 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Sun, 20 Sep 2026 06:43:08 GMT",
-      "bytes": 689507,
+      "last_modified": "Sun, 20 Sep 2026 12:02:51 GMT",
+      "bytes": 1022782,
       "ok": true,
       "commits": [
+        {
+          "sha": "93834de",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/93834de6087f5e84eae588c9fc691fc319a6b4a1",
+          "message": "Add the modular recruitment system behind Applications",
+          "author": "Andre Boufama",
+          "date": "2026-09-20T10:25:38Z"
+        },
         {
           "sha": "2777052",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/27770523c0a476eccc7560ef9e8fe1521fb00e45",
@@ -459,20 +466,13 @@
           "message": "Rebuild the signed-out page as the wiki frame with members-only parts locked",
           "author": "Andre Boufama",
           "date": "2026-09-19T23:38:29Z"
-        },
-        {
-          "sha": "00380f9",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/00380f9a46b3f299f939486c9e0a24006be2d10d",
-          "message": "Put the 2x2 mark beside the sidebar brand",
-          "author": "Andre Boufama",
-          "date": "2026-09-19T23:26:03Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 20, 2026 · 12:49 AM EDT"
+      "last_commit_et": "Sep 20, 2026 · 6:25 AM EDT"
     }
   },
   "agents": [
