@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-20T01:25:45Z",
-  "generated_at_et": "Sep 19, 2026 · 9:25 PM EDT",
+  "generated_at_utc": "2026-09-20T06:44:24Z",
+  "generated_at_et": "Sep 20, 2026 · 2:44 AM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
     "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 4d ago was: Check application recovery on every change. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1h ago was: Keep the sign-in control still when pressed. No open pull requests. It is not in the top results for any tracked query."
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1h ago was: Reject prototype op names and stop attachments executing on the wiki origin. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -421,10 +421,17 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Sat, 19 Sep 2026 23:56:01 GMT",
+      "last_modified": "Sun, 20 Sep 2026 06:43:08 GMT",
       "bytes": 689507,
       "ok": true,
       "commits": [
+        {
+          "sha": "2777052",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/27770523c0a476eccc7560ef9e8fe1521fb00e45",
+          "message": "Reject prototype op names and stop attachments executing on the wiki origin",
+          "author": "Andre Boufama",
+          "date": "2026-09-20T04:49:06Z"
+        },
         {
           "sha": "3abe22a",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/3abe22a438035caeccf74af42d2a6d819fb083bf",
@@ -459,20 +466,13 @@
           "message": "Put the 2x2 mark beside the sidebar brand",
           "author": "Andre Boufama",
           "date": "2026-09-19T23:26:03Z"
-        },
-        {
-          "sha": "a89446a",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/a89446aa8e9e530e9b7c969cbbbb2784a78d2fa5",
-          "message": "Show the sidebar brand as text only",
-          "author": "Andre Boufama",
-          "date": "2026-09-19T23:24:29Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 19, 2026 · 7:52 PM EDT"
+      "last_commit_et": "Sep 20, 2026 · 12:49 AM EDT"
     }
   },
   "agents": [
