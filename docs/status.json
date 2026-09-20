@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-19T23:22:09Z",
-  "generated_at_et": "Sep 19, 2026 · 7:22 PM EDT",
+  "generated_at_utc": "2026-09-20T01:25:45Z",
+  "generated_at_et": "Sep 19, 2026 · 9:25 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
     "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 4d ago was: Check application recovery on every change. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 4h ago was: Match the Settings gear hover to the account card. No open pull requests. It is not in the top results for any tracked query."
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1h ago was: Keep the sign-in control still when pressed. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -421,58 +421,58 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Sat, 19 Sep 2026 22:16:03 GMT",
-      "bytes": 696778,
+      "last_modified": "Sat, 19 Sep 2026 23:56:01 GMT",
+      "bytes": 689507,
       "ok": true,
       "commits": [
         {
-          "sha": "cc19834",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/cc19834e5e9876ce812b3a32f9710e0e545dd437",
-          "message": "Match the Settings gear hover to the account card",
+          "sha": "3abe22a",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/3abe22a438035caeccf74af42d2a6d819fb083bf",
+          "message": "Keep the sign-in control still when pressed",
           "author": "Andre Boufama",
-          "date": "2026-09-19T19:06:24Z"
+          "date": "2026-09-19T23:52:45Z"
         },
         {
-          "sha": "a992fa0",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/a992fa0b9bb433449cfba5bb396e777047978685",
-          "message": "Replace the Voronoi title with a plain heading and a one-line wiki summary",
+          "sha": "3f4fe5a",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/3f4fe5a271fda5cba4d01b5e99ef4a9235ea1d0e",
+          "message": "Cut the signed-out page down to the frame, the folders, and one control",
           "author": "Andre Boufama",
-          "date": "2026-09-19T19:03:39Z"
+          "date": "2026-09-19T23:49:00Z"
         },
         {
-          "sha": "7445682",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/7445682f5ffab5275513861652b4f95f4b10c936",
-          "message": "Restore the previous sign-in page",
+          "sha": "f9ac767",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/f9ac767aca94c5a544fec0c0210545b75efd8279",
+          "message": "Credit people by name, open the editor split, and move Export to Settings",
           "author": "Andre Boufama",
-          "date": "2026-09-19T19:01:01Z"
+          "date": "2026-09-19T23:40:51Z"
         },
         {
-          "sha": "ff8f422",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/ff8f422f922bda0a8c8de0bdd9ca7989f95d7715",
-          "message": "Split Integrations from Members, rename the Settings menu, and give the wiki a real front page",
+          "sha": "5bbd270",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/5bbd27065b73bd6e706b9e7bb8af8236fc428ae4",
+          "message": "Rebuild the signed-out page as the wiki frame with members-only parts locked",
           "author": "Andre Boufama",
-          "date": "2026-09-19T18:52:30Z"
+          "date": "2026-09-19T23:38:29Z"
         },
         {
-          "sha": "fb4a8f0",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/fb4a8f08dbb16fa071fa3a753182f04440511f7c",
-          "message": "Prompt for sign-in when a session ends, renew sessions on use, and box the integrations",
+          "sha": "00380f9",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/00380f9a46b3f299f939486c9e0a24006be2d10d",
+          "message": "Put the 2x2 mark beside the sidebar brand",
           "author": "Andre Boufama",
-          "date": "2026-09-19T18:30:31Z"
+          "date": "2026-09-19T23:26:03Z"
         },
         {
-          "sha": "ec3d82f",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/ec3d82f17b78742476b2a3a4b324a57a233f4f1c",
-          "message": "Rename Interest to Applications and move wiki tools into a Settings menu",
+          "sha": "a89446a",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/a89446aa8e9e530e9b7c969cbbbb2784a78d2fa5",
+          "message": "Show the sidebar brand as text only",
           "author": "Andre Boufama",
-          "date": "2026-09-19T18:08:53Z"
+          "date": "2026-09-19T23:24:29Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 19, 2026 · 3:06 PM EDT"
+      "last_commit_et": "Sep 19, 2026 · 7:52 PM EDT"
     }
   },
   "agents": [
