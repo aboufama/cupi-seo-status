@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-21T13:42:19Z",
-  "generated_at_et": "Sep 21, 2026 · 9:42 AM EDT",
+  "generated_at_utc": "2026-09-21T19:07:26Z",
+  "generated_at_et": "Sep 21, 2026 · 3:07 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 16h ago was: Attach control that reads on a phone. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 15h ago was: Applications at one height, one column, one curve. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 2h ago was: The wiki's own \"after sending\" line, and long text with a file. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1h ago was: The form's wording is three labelled fields. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,31 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Sun, 20 Sep 2026 21:35:30 GMT",
-      "bytes": 18981,
+      "last_modified": "Mon, 21 Sep 2026 17:07:48 GMT",
+      "bytes": 19062,
       "ok": true,
       "commits": [
+        {
+          "sha": "7cba9f8",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/7cba9f838e0298068ca8fb17ab4e7cdba41ed405",
+          "message": "The wiki's own \"after sending\" line, and long text with a file",
+          "author": "Andre Boufama",
+          "date": "2026-09-21T17:06:59Z"
+        },
+        {
+          "sha": "cfe1f31",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/cfe1f31f38ba34e580611849a52289b298effbdb",
+          "message": "/apply shows the live form's title",
+          "author": "Andre Boufama",
+          "date": "2026-09-21T16:58:43Z"
+        },
+        {
+          "sha": "0c29c37",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/0c29c37de9a70d5d76005ee5e3673a13e73dd613",
+          "message": "Apply pages follow the wiki's forms alone",
+          "author": "Andre Boufama",
+          "date": "2026-09-21T16:39:18Z"
+        },
         {
           "sha": "ea2ece7",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/ea2ece7fd23dd17ec2f34ab39d6ea1b7bfc43761",
@@ -382,34 +403,13 @@
           "message": "Say so when a form does not replace an earlier submission",
           "author": "Andre Boufama",
           "date": "2026-09-20T21:04:30Z"
-        },
-        {
-          "sha": "e30c573",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/e30c57357aff8cb0896ee2090d0744ad71b2554e",
-          "message": "Show one form at /apply: the wiki's choice, else the first open one",
-          "author": "Andre Boufama",
-          "date": "2026-09-20T19:44:25Z"
-        },
-        {
-          "sha": "fed6fd1",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/fed6fd1ed4f94a1d9581c6f89ffcfac0f696a155",
-          "message": "Give every form its own page under /apply/",
-          "author": "Andre Boufama",
-          "date": "2026-09-20T18:58:34Z"
-        },
-        {
-          "sha": "ee5885a",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/ee5885a52147904a9ab7fa8cc3000e2484fd96a0",
-          "message": "Test the Apply page against the wiki-driven forms",
-          "author": "Andre Boufama",
-          "date": "2026-09-20T17:38:21Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 20, 2026 · 5:34 PM EDT"
+      "last_commit_et": "Sep 21, 2026 · 1:06 PM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -421,58 +421,58 @@
       "host": "wiki.cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
-      "last_modified": "Mon, 21 Sep 2026 05:30:12 GMT",
-      "bytes": 889448,
+      "last_modified": "Mon, 21 Sep 2026 17:15:45 GMT",
+      "bytes": 890647,
       "ok": true,
       "commits": [
         {
-          "sha": "d467838",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/d467838ff1491c156f8e90b17b5a4781068a806b",
-          "message": "Applications at one height, one column, one curve",
+          "sha": "f2a8b4f",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/f2a8b4f8757391e148f77402f849f8efffca8bb5",
+          "message": "The form's wording is three labelled fields",
           "author": "Andre Boufama",
-          "date": "2026-09-20T22:25:09Z"
+          "date": "2026-09-21T17:15:16Z"
         },
         {
-          "sha": "970fd2d",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/970fd2d8d23a034a49b5aa294d3e23365c343d50",
-          "message": "Settings opens on the name, without a heading or a deadline note",
+          "sha": "3e90fb1",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/3e90fb1f86ac343733bc84e54f53a2cb25fe19cb",
+          "message": "\"After they send it\" sits under the title and description",
           "author": "Andre Boufama",
-          "date": "2026-09-20T21:58:51Z"
+          "date": "2026-09-21T17:11:47Z"
         },
         {
-          "sha": "de27ef3",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/de27ef3145502a58396fb2853ea552d6215c1bf9",
-          "message": "The sliding thumb sits on its item, and fewer notes",
+          "sha": "32b4840",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/32b4840738f1fe4d061913fca7cbefbd311f5885",
+          "message": "A form says what applicants read after sending; long text with a file",
           "author": "Andre Boufama",
-          "date": "2026-09-20T21:56:29Z"
+          "date": "2026-09-21T17:07:17Z"
         },
         {
-          "sha": "91c1d16",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/91c1d16a5d57fffb546998e574415d744230288f",
-          "message": "Forms are modular, and every screen fits a phone",
+          "sha": "59d433f",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/59d433facf1de3c9363e7de406bbf38b0411f8fc",
+          "message": "Nothing hard-wired to a form: the review's fixes",
           "author": "Andre Boufama",
-          "date": "2026-09-20T21:35:25Z"
+          "date": "2026-09-21T16:43:17Z"
         },
         {
-          "sha": "dfaa63a",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/dfaa63ac8e798742d684b0dd13884c2896a18852",
-          "message": "Settings behind a gear beside the cycle name, rethought",
+          "sha": "a40edf7",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/a40edf773ed5d2480fd36423d2d4927b797970bf",
+          "message": "No default recipients: a form emails only who it names",
           "author": "Andre Boufama",
-          "date": "2026-09-20T21:07:03Z"
+          "date": "2026-09-21T15:44:06Z"
         },
         {
-          "sha": "17cfdd0",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/17cfdd0d891e6b9967c8e8336dc0c6148b08b679",
-          "message": "Set the People columns like the rest of the sheet",
+          "sha": "6949ae9",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/6949ae91bb9971ebfb581cd79fbe82b6657b8770",
+          "message": "Each form names who gets its emails",
           "author": "Andre Boufama",
-          "date": "2026-09-20T20:53:58Z"
+          "date": "2026-09-21T15:39:46Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 20, 2026 · 6:25 PM EDT"
+      "last_commit_et": "Sep 21, 2026 · 1:15 PM EDT"
     }
   },
   "agents": [
