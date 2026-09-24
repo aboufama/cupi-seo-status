@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-23T23:53:13Z",
-  "generated_at_et": "Sep 23, 2026 · 7:53 PM EDT",
+  "generated_at_utc": "2026-09-24T03:30:54Z",
+  "generated_at_et": "Sep 23, 2026 · 11:30 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
     "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 1d ago was: Fix modular recruitment forms and durable applicant drafts. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1m ago was: Keep public context discovery visible to browser agents after app boot. No open pull requests. It is not in the top results for any tracked query."
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 3h ago was: Make agent context sidebar control copy only. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -422,9 +422,23 @@
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
       "last_modified": null,
-      "bytes": 952689,
+      "bytes": 955213,
       "ok": true,
       "commits": [
+        {
+          "sha": "6a7c9c5",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/6a7c9c5f9b634c72548573ba642628d10c525811",
+          "message": "Make agent context sidebar control copy only",
+          "author": "Andre Boufama",
+          "date": "2026-09-24T00:02:04Z"
+        },
+        {
+          "sha": "50510a9",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/50510a966453ba83a95658ba7e2d443149d5e5f1",
+          "message": "Add sidebar link and copy instructions for public agent context",
+          "author": "Andre Boufama",
+          "date": "2026-09-23T23:59:39Z"
+        },
         {
           "sha": "5c731e0",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/5c731e0052e5cca8bfb97a635433037dc904f9fb",
@@ -452,27 +466,13 @@
           "message": "Verify recruitment database transactions in the admin storage check",
           "author": "Andre Boufama",
           "date": "2026-09-22T20:34:45Z"
-        },
-        {
-          "sha": "c0832ba",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/c0832ba74699a204353c0fb69d207301b10fda4d",
-          "message": "Repair modular recruitment intake, access controls, and review UI",
-          "author": "Andre Boufama",
-          "date": "2026-09-22T20:31:52Z"
-        },
-        {
-          "sha": "f2a8b4f",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/f2a8b4f8757391e148f77402f849f8efffca8bb5",
-          "message": "The form's wording is three labelled fields",
-          "author": "Andre Boufama",
-          "date": "2026-09-21T17:15:16Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 23, 2026 · 7:51 PM EDT"
+      "last_commit_et": "Sep 23, 2026 · 8:02 PM EDT"
     }
   },
   "agents": [
