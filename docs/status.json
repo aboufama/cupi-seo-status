@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-25T19:53:15Z",
-  "generated_at_et": "Sep 25, 2026 · 3:53 PM EDT",
+  "generated_at_utc": "2026-09-25T23:08:46Z",
+  "generated_at_et": "Sep 25, 2026 · 7:08 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 15m ago was: Block submission until missing or rejected attachments are resolved. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 15m ago was: Preserve applicant attachments and reject incomplete uploads. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 3h ago was: Require saved receipts and retain unresolved upload drafts. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1h ago was: Close database test connections before stopping Postgres. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,17 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Fri, 25 Sep 2026 19:38:33 GMT",
+      "last_modified": "Fri, 25 Sep 2026 19:54:04 GMT",
       "bytes": 19062,
       "ok": true,
       "commits": [
+        {
+          "sha": "2bbadd7",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/2bbadd7fca92b57bc488d165e3b5d5ff4bc37866",
+          "message": "Require saved receipts and retain unresolved upload drafts",
+          "author": "Andre Boufama",
+          "date": "2026-09-25T19:53:19Z"
+        },
         {
           "sha": "4ea2500",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/4ea2500cf179f6ed276d0e8dd7e092f271af9c43",
@@ -396,20 +403,13 @@
           "message": "Apply pages follow the wiki's forms alone",
           "author": "Andre Boufama",
           "date": "2026-09-21T16:39:18Z"
-        },
-        {
-          "sha": "ea2ece7",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/ea2ece7fd23dd17ec2f34ab39d6ea1b7bfc43761",
-          "message": "Attach control that reads on a phone",
-          "author": "Andre Boufama",
-          "date": "2026-09-20T21:34:55Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 25, 2026 · 3:37 PM EDT"
+      "last_commit_et": "Sep 25, 2026 · 3:53 PM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -425,6 +425,20 @@
       "bytes": 955346,
       "ok": true,
       "commits": [
+        {
+          "sha": "20d23b5",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/20d23b506d77c8bae8f4ad8101771a42a1529672",
+          "message": "Close database test connections before stopping Postgres",
+          "author": "Andre Boufama",
+          "date": "2026-09-25T21:29:37Z"
+        },
+        {
+          "sha": "22d676d",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/22d676dcb09c94237fc92bc3c362651baf2baee8",
+          "message": "Reject unconfirmed intake outcomes and continuously test upload rollback",
+          "author": "Andre Boufama",
+          "date": "2026-09-25T19:53:18Z"
+        },
         {
           "sha": "b6a106c",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/b6a106c3ef5df885db9875c8b1cda47716e746b4",
@@ -452,27 +466,13 @@
           "message": "Keep public context discovery visible to browser agents after app boot",
           "author": "Andre Boufama",
           "date": "2026-09-23T23:51:30Z"
-        },
-        {
-          "sha": "b168be8",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/b168be8230657b61c64c13a26223882a3d7a2b6e",
-          "message": "Keep unchanged context exports identical across requests",
-          "author": "Andre Boufama",
-          "date": "2026-09-23T23:29:57Z"
-        },
-        {
-          "sha": "f87acef",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/f87acef4d4bd4734c13273a087ec5d2d8ab0ec34",
-          "message": "Expose live wiki context to agents through the normal wiki URL",
-          "author": "Andre Boufama",
-          "date": "2026-09-23T23:28:11Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 25, 2026 · 3:37 PM EDT"
+      "last_commit_et": "Sep 25, 2026 · 5:29 PM EDT"
     }
   },
   "agents": [
