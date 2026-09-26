@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-26T19:33:59Z",
-  "generated_at_et": "Sep 26, 2026 · 3:33 PM EDT",
+  "generated_at_utc": "2026-09-26T22:26:10Z",
+  "generated_at_et": "Sep 26, 2026 · 6:26 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 23h ago was: Require saved receipts and retain unresolved upload drafts. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 22h ago was: Close database test connections before stopping Postgres. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 3m ago was: Cover authoritative form availability and avoid duplicate error guidance. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 5m ago was: Fix recruitment ownership, deadlines, historical forms and draft recovery. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,24 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Fri, 25 Sep 2026 19:54:04 GMT",
+      "last_modified": "Sat, 26 Sep 2026 22:23:29 GMT",
       "bytes": 19062,
       "ok": true,
       "commits": [
+        {
+          "sha": "46a8d51",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/46a8d51ed17dee102fa7b2fa68969dfcf521647c",
+          "message": "Cover authoritative form availability and avoid duplicate error guidance",
+          "author": "Andre Boufama",
+          "date": "2026-09-26T22:22:39Z"
+        },
+        {
+          "sha": "342e3ba",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/342e3bae4b164f2f44cc10b4839f83c70e7c95b5",
+          "message": "Honor recruitment availability and remove unverified replacement flow",
+          "author": "Andre Boufama",
+          "date": "2026-09-26T22:20:24Z"
+        },
         {
           "sha": "2bbadd7",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/2bbadd7fca92b57bc488d165e3b5d5ff4bc37866",
@@ -389,27 +403,13 @@
           "message": "The wiki's own \"after sending\" line, and long text with a file",
           "author": "Andre Boufama",
           "date": "2026-09-21T17:06:59Z"
-        },
-        {
-          "sha": "cfe1f31",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/cfe1f31f38ba34e580611849a52289b298effbdb",
-          "message": "/apply shows the live form's title",
-          "author": "Andre Boufama",
-          "date": "2026-09-21T16:58:43Z"
-        },
-        {
-          "sha": "0c29c37",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/0c29c37de9a70d5d76005ee5e3673a13e73dd613",
-          "message": "Apply pages follow the wiki's forms alone",
-          "author": "Andre Boufama",
-          "date": "2026-09-21T16:39:18Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 25, 2026 · 3:53 PM EDT"
+      "last_commit_et": "Sep 26, 2026 · 6:22 PM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -422,57 +422,57 @@
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
       "last_modified": null,
-      "bytes": 955346,
+      "bytes": 964457,
       "ok": true,
       "commits": [
         {
-          "sha": "20d23b5",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/20d23b506d77c8bae8f4ad8101771a42a1529672",
-          "message": "Close database test connections before stopping Postgres",
+          "sha": "c0179ca",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/c0179ca3ee56f901c1c6a122d891688a5ea3715d",
+          "message": "Fix recruitment ownership, deadlines, historical forms and draft recovery",
           "author": "Andre Boufama",
-          "date": "2026-09-25T21:29:37Z"
+          "date": "2026-09-26T22:20:13Z"
         },
         {
-          "sha": "22d676d",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/22d676dcb09c94237fc92bc3c362651baf2baee8",
-          "message": "Reject unconfirmed intake outcomes and continuously test upload rollback",
+          "sha": "d9a4b17",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/d9a4b17525f602b7d1210987e5cfd979fcaf7754",
+          "message": "Open filtered People on the selected submission form",
           "author": "Andre Boufama",
-          "date": "2026-09-25T19:53:18Z"
+          "date": "2026-09-26T22:01:22Z"
         },
         {
-          "sha": "b6a106c",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/b6a106c3ef5df885db9875c8b1cda47716e746b4",
-          "message": "Preserve applicant attachments and reject incomplete uploads",
+          "sha": "c7fa886",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/c7fa886dc6ac01b73879d39c603a8fe832e21daa",
+          "message": "Remove redundant Forms sent column from People",
           "author": "Andre Boufama",
-          "date": "2026-09-25T19:37:45Z"
+          "date": "2026-09-26T21:56:56Z"
         },
         {
-          "sha": "6a7c9c5",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/6a7c9c5f9b634c72548573ba642628d10c525811",
-          "message": "Make agent context sidebar control copy only",
+          "sha": "6306dd5",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/6306dd5dc179da3dba1159d1ea52166d7d6509a7",
+          "message": "Refresh generated previews for People updates",
           "author": "Andre Boufama",
-          "date": "2026-09-24T00:02:04Z"
+          "date": "2026-09-26T21:53:15Z"
         },
         {
-          "sha": "50510a9",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/50510a966453ba83a95658ba7e2d443149d5e5f1",
-          "message": "Add sidebar link and copy instructions for public agent context",
+          "sha": "5d098a3",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/5d098a3e9f29ddd4ed2a096045712ca98fcd13e2",
+          "message": "Add People form filters and compact submission menus",
           "author": "Andre Boufama",
-          "date": "2026-09-23T23:59:39Z"
+          "date": "2026-09-26T21:52:27Z"
         },
         {
-          "sha": "5c731e0",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/5c731e0052e5cca8bfb97a635433037dc904f9fb",
-          "message": "Keep public context discovery visible to browser agents after app boot",
+          "sha": "f9cb449",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/f9cb449b66799db150b13de54935458b6c852c4b",
+          "message": "Fix stale People filters and refine person comments",
           "author": "Andre Boufama",
-          "date": "2026-09-23T23:51:30Z"
+          "date": "2026-09-26T21:43:50Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 25, 2026 · 5:29 PM EDT"
+      "last_commit_et": "Sep 26, 2026 · 6:20 PM EDT"
     }
   },
   "agents": [
