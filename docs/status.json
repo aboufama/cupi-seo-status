@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-09-29T02:12:57Z",
-  "generated_at_et": "Sep 28, 2026 · 10:12 PM EDT",
+  "generated_at_utc": "2026-09-29T08:54:35Z",
+  "generated_at_et": "Sep 29, 2026 · 4:54 AM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 2d ago was: Cover authoritative form availability and avoid duplicate error guidance. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 5h ago was: Honor homepage no-image search preview preference. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
     "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 1d ago was: Drop the tiles of totals from a person's page; show when they submitted. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
@@ -358,10 +358,17 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Sat, 26 Sep 2026 22:23:28 GMT",
-      "bytes": 19062,
+      "last_modified": "Tue, 29 Sep 2026 03:11:57 GMT",
+      "bytes": 19061,
       "ok": true,
       "commits": [
+        {
+          "sha": "483bc0b",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/483bc0b17313578d1f593d02a3e143e3bbf0de5f",
+          "message": "Honor homepage no-image search preview preference",
+          "author": "Andre Boufama",
+          "date": "2026-09-29T03:11:15Z"
+        },
         {
           "sha": "46a8d51",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/46a8d51ed17dee102fa7b2fa68969dfcf521647c",
@@ -396,20 +403,13 @@
           "message": "Fix modular recruitment forms and durable applicant drafts",
           "author": "Andre Boufama",
           "date": "2026-09-22T20:29:34Z"
-        },
-        {
-          "sha": "7cba9f8",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/7cba9f838e0298068ca8fb17ab4e7cdba41ed405",
-          "message": "The wiki's own \"after sending\" line, and long text with a file",
-          "author": "Andre Boufama",
-          "date": "2026-09-21T17:06:59Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 26, 2026 · 6:22 PM EDT"
+      "last_commit_et": "Sep 28, 2026 · 11:11 PM EDT"
     },
     "wiki": {
       "id": "wiki",
@@ -422,7 +422,7 @@
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
       "last_modified": null,
-      "bytes": 1148094,
+      "bytes": 1148234,
       "ok": true,
       "commits": [
         {
