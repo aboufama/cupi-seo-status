@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-10-01T00:43:43Z",
-  "generated_at_et": "Sep 30, 2026 · 8:43 PM EDT",
+  "generated_at_utc": "2026-10-01T06:56:46Z",
+  "generated_at_et": "Oct 1, 2026 · 2:56 AM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 1d ago was: Honor homepage no-image search preview preference. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 3d ago was: Drop the tiles of totals from a person's page; show when they submitted. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 2d ago was: Honor homepage no-image search preview preference. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 4h ago was: Group unresolved recruitment splits and show accepted cycle totals. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -422,9 +422,30 @@
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
       "last_modified": null,
-      "bytes": 1148108,
+      "bytes": 1149532,
       "ok": true,
       "commits": [
+        {
+          "sha": "437ea5f",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/437ea5ff683fb1e98af719051021c7f67a491a01",
+          "message": "Group unresolved recruitment splits and show accepted cycle totals",
+          "author": "Andre Boufama",
+          "date": "2026-10-01T02:01:42Z"
+        },
+        {
+          "sha": "0f5a1a5",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/0f5a1a5a7f70f204766d3863534bce94173ba0e7",
+          "message": "Streamline applicant profiles and open attachments for preview",
+          "author": "Andre Boufama",
+          "date": "2026-10-01T01:42:02Z"
+        },
+        {
+          "sha": "0138b02",
+          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/0138b0224d2ee1780836eab2e1b6351b7d14d990",
+          "message": "Fix recruitment split paths and clarify applicant decisions",
+          "author": "Andre Boufama",
+          "date": "2026-10-01T01:16:55Z"
+        },
         {
           "sha": "aca2bae",
           "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/aca2bae1dffe00d5c334c1ea6f12142f4ced023c",
@@ -445,34 +466,13 @@
           "message": "Split a stage by an applicant's answer; draw the flow top to bottom",
           "author": "Claude",
           "date": "2026-09-27T22:22:31Z"
-        },
-        {
-          "sha": "b77d1d4",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/b77d1d466c8813c56c6684f1ac8270411869cdad",
-          "message": "Keep lead-written stage and field names from starting a formula in the CSV",
-          "author": "Claude",
-          "date": "2026-09-27T21:28:08Z"
-        },
-        {
-          "sha": "b70aedc",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/b70aedc685feaf5ebe7084414571573f2a34d92e",
-          "message": "Test the flow, stage, people, person and insights views; fix what they found",
-          "author": "Claude",
-          "date": "2026-09-27T21:26:46Z"
-        },
-        {
-          "sha": "216cd92",
-          "url": "https://github.com/Cornell-Physical-Intelligence/wiki/commit/216cd922c1054e996d1b15c3cc4bbbe6521f45ab",
-          "message": "Rebuild Applications around a per-cycle flow of stages",
-          "author": "Claude",
-          "date": "2026-09-27T21:14:37Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Sep 27, 2026 · 7:37 PM EDT"
+      "last_commit_et": "Sep 30, 2026 · 10:01 PM EDT"
     }
   },
   "agents": [
