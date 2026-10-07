@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-10-07T06:54:45Z",
-  "generated_at_et": "Oct 7, 2026 · 2:54 AM EDT",
+  "generated_at_utc": "2026-10-07T14:16:52Z",
+  "generated_at_et": "Oct 7, 2026 · 10:16 AM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 11h ago was: Rename the spam trap away from autofill and fit carried answers. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 11h ago was: Stop refusing real applicants and replay queued ones on their own. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 40m ago was: Rebuild the site. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 18h ago was: Stop refusing real applicants and replay queued ones on their own. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,31 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Tue, 06 Oct 2026 19:38:37 GMT",
-      "bytes": 19061,
+      "last_modified": "Wed, 07 Oct 2026 13:37:00 GMT",
+      "bytes": 19201,
       "ok": true,
       "commits": [
+        {
+          "sha": "5bf08df",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/5bf08df2429830b02bd1fafc835776eb04003509",
+          "message": "Rebuild the site",
+          "author": "Andre Boufama",
+          "date": "2026-10-07T13:36:13Z"
+        },
+        {
+          "sha": "31cde13",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/31cde1324087d721924c7a7ddaea31d0477f5b32",
+          "message": "Merge remote-tracking branch 'origin/main' into hexapod-hero",
+          "author": "Andre Boufama",
+          "date": "2026-10-07T13:35:55Z"
+        },
+        {
+          "sha": "2d7be0f",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/2d7be0fc2295db8661f1e9a666be25116adddfc4",
+          "message": "Feature the hexapod on the homepage and update the team and project copy",
+          "author": "Andre Boufama",
+          "date": "2026-10-07T13:35:55Z"
+        },
         {
           "sha": "d6df59a",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/d6df59a47a58fd6d0f26c77ba5677d4f6975f796",
@@ -382,34 +403,13 @@
           "message": "Retry the Apply forms before failing, and never strand an applicant",
           "author": "Andre Boufama",
           "date": "2026-10-06T18:36:32Z"
-        },
-        {
-          "sha": "86acbbd",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/86acbbd876c5f6f3e9ae3c6a4318d1df7419d47a",
-          "message": "Let applicants pick their subteam's form at /apply",
-          "author": "Andre Boufama",
-          "date": "2026-10-06T17:53:42Z"
-        },
-        {
-          "sha": "483bc0b",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/483bc0b17313578d1f593d02a3e143e3bbf0de5f",
-          "message": "Honor homepage no-image search preview preference",
-          "author": "Andre Boufama",
-          "date": "2026-09-29T03:11:15Z"
-        },
-        {
-          "sha": "46a8d51",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/46a8d51ed17dee102fa7b2fa68969dfcf521647c",
-          "message": "Cover authoritative form availability and avoid duplicate error guidance",
-          "author": "Andre Boufama",
-          "date": "2026-09-26T22:22:39Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Oct 6, 2026 · 3:37 PM EDT"
+      "last_commit_et": "Oct 7, 2026 · 9:36 AM EDT"
     },
     "wiki": {
       "id": "wiki",
