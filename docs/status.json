@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-18T18:49:12Z",
-  "generated_at_et": "Oct 18, 2026 · 2:49 PM EDT",
+  "generated_at_utc": "2026-10-18T21:19:07Z",
+  "generated_at_et": "Oct 18, 2026 · 5:19 PM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 13h ago was: Add Luke, Suphia, and Hendry member blurbs. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 16m ago was: Add Julian Gasharov's member blurb. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
     "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 4d ago was: Let the Website tab say what /apply says above its forms. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
@@ -358,10 +358,24 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Sun, 18 Oct 2026 05:01:09 GMT",
+      "last_modified": "Sun, 18 Oct 2026 21:04:14 GMT",
       "bytes": 20328,
       "ok": true,
       "commits": [
+        {
+          "sha": "628f10c",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/628f10c67694c692c247bc23eebd57fe4e2ff721",
+          "message": "Add Julian Gasharov's member blurb",
+          "author": "Andre Boufama",
+          "date": "2026-10-18T21:03:04Z"
+        },
+        {
+          "sha": "5208418",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/5208418f92afc0da75dd03fd968d99d5f6c04419",
+          "message": "Add Aidan Moran's member blurb",
+          "author": "Andre Boufama",
+          "date": "2026-10-18T20:28:35Z"
+        },
         {
           "sha": "f822114",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/f822114f7a940acc5410854dce2ab6b76be0dfad",
@@ -389,27 +403,13 @@
           "message": "List on /apply only the forms the wiki puts there",
           "author": "Andre Boufama",
           "date": "2026-10-14T14:46:20Z"
-        },
-        {
-          "sha": "2356865",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/235686510f79e662877ebc8fd4339545d20033ba",
-          "message": "Never strand an applicant on the Apply page",
-          "author": "Andre Boufama",
-          "date": "2026-10-07T16:01:24Z"
-        },
-        {
-          "sha": "5bf08df",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/5bf08df2429830b02bd1fafc835776eb04003509",
-          "message": "Rebuild the site",
-          "author": "Andre Boufama",
-          "date": "2026-10-07T13:36:13Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Oct 18, 2026 · 1:00 AM EDT"
+      "last_commit_et": "Oct 18, 2026 · 5:03 PM EDT"
     },
     "wiki": {
       "id": "wiki",
