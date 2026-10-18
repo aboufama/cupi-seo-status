@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-18T03:23:01Z",
-  "generated_at_et": "Oct 17, 2026 · 11:23 PM EDT",
+  "generated_at_utc": "2026-10-18T08:16:54Z",
+  "generated_at_et": "Oct 18, 2026 · 4:16 AM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 23h ago was: Update current member roster, class years, and team count. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 3h ago was: Add Luke, Suphia, and Hendry member blurbs. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
     "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 3d ago was: Let the Website tab say what /apply says above its forms. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
@@ -358,10 +358,17 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Sat, 17 Oct 2026 03:41:29 GMT",
+      "last_modified": "Sun, 18 Oct 2026 05:01:09 GMT",
       "bytes": 20328,
       "ok": true,
       "commits": [
+        {
+          "sha": "f822114",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/f822114f7a940acc5410854dce2ab6b76be0dfad",
+          "message": "Add Luke, Suphia, and Hendry member blurbs",
+          "author": "Andre Boufama",
+          "date": "2026-10-18T05:00:19Z"
+        },
         {
           "sha": "b30d88b",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/b30d88be5e78bfaeadba6d913acc7f73b6d457ac",
@@ -396,20 +403,13 @@
           "message": "Rebuild the site",
           "author": "Andre Boufama",
           "date": "2026-10-07T13:36:13Z"
-        },
-        {
-          "sha": "31cde13",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/31cde1324087d721924c7a7ddaea31d0477f5b32",
-          "message": "Merge remote-tracking branch 'origin/main' into hexapod-hero",
-          "author": "Andre Boufama",
-          "date": "2026-10-07T13:35:55Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Oct 16, 2026 · 11:40 PM EDT"
+      "last_commit_et": "Oct 18, 2026 · 1:00 AM EDT"
     },
     "wiki": {
       "id": "wiki",
