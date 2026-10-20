@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-20T00:32:26Z",
-  "generated_at_et": "Oct 19, 2026 · 8:32 PM EDT",
+  "generated_at_utc": "2026-10-20T05:43:18Z",
+  "generated_at_et": "Oct 20, 2026 · 1:43 AM EDT",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 1d ago was: Add Youhanna Meleka's member blurb. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 1h ago was: Add Ty Yue's member blurb. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
     "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 5d ago was: Let the Website tab say what /apply says above its forms. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
@@ -358,10 +358,38 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Sun, 18 Oct 2026 21:53:05 GMT",
+      "last_modified": "Tue, 20 Oct 2026 03:52:35 GMT",
       "bytes": 20328,
       "ok": true,
       "commits": [
+        {
+          "sha": "866984c",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/866984cd068b91abb84a4f6840b4289e855aaff6",
+          "message": "Add Ty Yue's member blurb",
+          "author": "Andre Boufama",
+          "date": "2026-10-20T03:51:55Z"
+        },
+        {
+          "sha": "eacbab4",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/eacbab45c2010c75fad364594ae8b31847914457",
+          "message": "Add mentorship to Youhanna's member blurb",
+          "author": "Andre Boufama",
+          "date": "2026-10-19T18:46:50Z"
+        },
+        {
+          "sha": "416959c",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/416959c0f3e3d213bc44779e8fce833c608aab06",
+          "message": "Add Jonathan, Kevin, and Vincent member blurbs",
+          "author": "Andre Boufama",
+          "date": "2026-10-19T18:45:00Z"
+        },
+        {
+          "sha": "8523cfa",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/8523cfa038d99c8fd74bf2e03eb0c906221b963c",
+          "message": "Add James Cenawood's member blurb",
+          "author": "Andre Boufama",
+          "date": "2026-10-19T18:44:32Z"
+        },
         {
           "sha": "b6522ef",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/b6522ef3e95144694dd5e45f630da2c2f3c9fd3b",
@@ -375,41 +403,13 @@
           "message": "Add Julian Gasharov's member blurb",
           "author": "Andre Boufama",
           "date": "2026-10-18T21:03:04Z"
-        },
-        {
-          "sha": "5208418",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/5208418f92afc0da75dd03fd968d99d5f6c04419",
-          "message": "Add Aidan Moran's member blurb",
-          "author": "Andre Boufama",
-          "date": "2026-10-18T20:28:35Z"
-        },
-        {
-          "sha": "f822114",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/f822114f7a940acc5410854dce2ab6b76be0dfad",
-          "message": "Add Luke, Suphia, and Hendry member blurbs",
-          "author": "Andre Boufama",
-          "date": "2026-10-18T05:00:19Z"
-        },
-        {
-          "sha": "b30d88b",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/b30d88be5e78bfaeadba6d913acc7f73b6d457ac",
-          "message": "Update current member roster, class years, and team count",
-          "author": "Andre Boufama",
-          "date": "2026-10-17T03:40:41Z"
-        },
-        {
-          "sha": "4c5c8eb",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/4c5c8eb18dee15b7f2fccc63b21092326da3c045",
-          "message": "Draw what the wiki puts above the forms on /apply",
-          "author": "Andre Boufama",
-          "date": "2026-10-14T15:27:56Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Oct 18, 2026 · 5:52 PM EDT"
+      "last_commit_et": "Oct 19, 2026 · 11:51 PM EDT"
     },
     "wiki": {
       "id": "wiki",
