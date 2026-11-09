@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-11-09T02:26:14Z",
-  "generated_at_et": "Nov 8, 2026 · 9:26 PM EST",
+  "generated_at_utc": "2026-11-09T10:08:05Z",
+  "generated_at_et": "Nov 9, 2026 · 5:08 AM EST",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 28m ago was: Replace the sponsorship packet with the 2026-2027 edition. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 4h ago was: Open the sponsorship packet in place and add a /donate link. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
     "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 25d ago was: Let the Website tab say what /apply says above its forms. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
@@ -358,10 +358,17 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Mon, 09 Nov 2026 01:58:11 GMT",
-      "bytes": 20328,
+      "last_modified": "Mon, 09 Nov 2026 05:36:01 GMT",
+      "bytes": 20410,
       "ok": true,
       "commits": [
+        {
+          "sha": "7b94fa3",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/7b94fa3cf94175482368ff7f7b711d56ef7c9819",
+          "message": "Open the sponsorship packet in place and add a /donate link",
+          "author": "Andre Boufama",
+          "date": "2026-11-09T05:35:24Z"
+        },
         {
           "sha": "7ff4f93",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/7ff4f93d089cd9513890d88eb9b1493b6e9a1cff",
@@ -396,20 +403,13 @@
           "message": "Add mentorship to Youhanna's member blurb",
           "author": "Andre Boufama",
           "date": "2026-10-19T18:46:50Z"
-        },
-        {
-          "sha": "416959c",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/416959c0f3e3d213bc44779e8fce833c608aab06",
-          "message": "Add Jonathan, Kevin, and Vincent member blurbs",
-          "author": "Andre Boufama",
-          "date": "2026-10-19T18:45:00Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Nov 8, 2026 · 8:57 PM EST"
+      "last_commit_et": "Nov 9, 2026 · 12:35 AM EST"
     },
     "wiki": {
       "id": "wiki",
@@ -422,7 +422,7 @@
       "http_status": 200,
       "title": "CUPI Wiki | Cornell Physical Intelligence",
       "last_modified": null,
-      "bytes": 1190971,
+      "bytes": 1195796,
       "ok": true,
       "commits": [
         {
