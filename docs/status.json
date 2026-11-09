@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-11-09T10:08:05Z",
-  "generated_at_et": "Nov 9, 2026 · 5:08 AM EST",
+  "generated_at_utc": "2026-11-09T20:58:46Z",
+  "generated_at_et": "Nov 9, 2026 · 3:58 PM EST",
   "timezone": "America/New_York",
   "brief": "The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.",
   "updates": {
-    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 4h ago was: Open the sponsorship packet in place and add a /donate link. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
-    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 25d ago was: Let the Website tab say what /apply says above its forms. No open pull requests. It is not in the top results for any tracked query."
+    "website": "Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 1h ago was: Add Orion Hoch as Hexapod Co-Lead. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.",
+    "wiki": "Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 26d ago was: Let the Website tab say what /apply says above its forms. No open pull requests. It is not in the top results for any tracked query."
   },
   "ranks": {
     "generated_at": "2026-08-21T12:50:37-04:00",
@@ -358,10 +358,17 @@
       "host": "cornellphysicalintelligence.com",
       "http_status": 200,
       "title": "CUPI Cornell | Cornell Physical Intelligence",
-      "last_modified": "Mon, 09 Nov 2026 05:36:01 GMT",
+      "last_modified": "Mon, 09 Nov 2026 19:17:50 GMT",
       "bytes": 20410,
       "ok": true,
       "commits": [
+        {
+          "sha": "a5463be",
+          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/a5463be9e3e33182ba2df541121a67b136b6b245",
+          "message": "Add Orion Hoch as Hexapod Co-Lead",
+          "author": "Andre Boufama",
+          "date": "2026-11-09T19:17:08Z"
+        },
         {
           "sha": "7b94fa3",
           "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/7b94fa3cf94175482368ff7f7b711d56ef7c9819",
@@ -396,20 +403,13 @@
           "message": "Add Ty Yue's member blurb",
           "author": "Andre Boufama",
           "date": "2026-10-20T03:51:55Z"
-        },
-        {
-          "sha": "eacbab4",
-          "url": "https://github.com/Cornell-Physical-Intelligence/General-Website/commit/eacbab45c2010c75fad364594ae8b31847914457",
-          "message": "Add mentorship to Youhanna's member blurb",
-          "author": "Andre Boufama",
-          "date": "2026-10-19T18:46:50Z"
         }
       ],
       "pulls": [],
       "commits_error": null,
       "pulls_error": null,
       "screenshot_ok": true,
-      "last_commit_et": "Nov 9, 2026 · 12:35 AM EST"
+      "last_commit_et": "Nov 9, 2026 · 2:17 PM EST"
     },
     "wiki": {
       "id": "wiki",
