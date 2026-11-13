@@ -1,6 +1,6 @@
 # CUPI SEO
 
-Last check: Nov 12, 2026 · 5:43 AM EST
+Last check: Nov 12, 2026 · 7:00 PM EST
 
 The official site is live (HTTP 200) and serving “CUPI Cornell | Cornell Physical Intelligence.” On a search snapshot from Aug 21, 2026 · 12:50 PM EDT — not Google Search Console — cornellphysicalintelligence.com ranks in 12 of 20 tracked queries, averaging position 2.5 where it appears, and is missing from the other 8. The short queries are the problem: Campus Groups take the #1 slot on the names people actually type. The wiki is not in the top results for any tracked query. The public page is a Google login wall, so there is nothing for a crawler to index.
 
@@ -32,7 +32,7 @@ Average position for cornellphysicalintelligence.com: 2.5
 | Cornell embodied AI club | not in top results | not in top results | Campus Groups | Official site missed. CEI lab 2, CAM 3. |
 
 Website
-Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 2d ago was: Show the leg jump as one clip and fold the two walk clips into one. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.
+Website is up (HTTP 200) and the live title is “CUPI Cornell | Cornell Physical Intelligence.” The latest change 3d ago was: Show the leg jump as one clip and fold the two walk clips into one. No open pull requests. It is not in the top results for “CUPI”, “CUPI wiki”, “Cornell Physical Intelligence wiki”, “wiki.cornellphysicalintelligence.com”, “cuphysint”, “CUPI Cornell hexapod”, “CUPI Cornell drone”, and “Cornell embodied AI club”.
 
 Wiki
-Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 28d ago was: Let the Website tab say what /apply says above its forms. No open pull requests. It is not in the top results for any tracked query.
+Wiki is up (HTTP 200) and the live title is “CUPI Wiki | Cornell Physical Intelligence.” The latest change 29d ago was: Let the Website tab say what /apply says above its forms. No open pull requests. It is not in the top results for any tracked query.
